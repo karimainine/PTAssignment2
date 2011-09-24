@@ -34,20 +34,33 @@ void readRestOfLine()
 /****************************************************************************
 * Initialises the system to a safe empty state.
 ****************************************************************************/
-void systemInit(VendingMachineType* vm)
+int systemInit(VendingMachineType *vm)
 {
 }
 
 /****************************************************************************
 * Loads all data into the system.
 ****************************************************************************/
-void loadData(VendingMachineType* vm, char* stockfile, char* coinsFile)
+int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
 {
+   FILE *stock;
+   FILE *coins;
+   
+   if((stock=fopen(stockfile, "r")) == NULL) {
+      printf("Cannot open stock file.\n");
+      return FAILURE;
+   } else if((coins=fopen(coinsFile, "r")) == NULL) {
+      printf("Cannot open coins file.\n");
+      return FAILURE;
+   } else {
+      printf("Files loaded successfully.\n");
+      return SUCCESS;
+   }
 }
 
 /****************************************************************************
 * Deallocates memory used in the program.
 ****************************************************************************/
-void systemFree(VendingMachineType* vm)
+void systemFree(VendingMachineType *vm)
 {
 }

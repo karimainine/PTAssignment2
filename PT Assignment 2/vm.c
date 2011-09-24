@@ -13,7 +13,7 @@
 #include "vm_options.h"
 #include "vm_utility.h"
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
    VendingMachineType vm;
 
@@ -23,8 +23,12 @@ int main(int argc, char* argv[])
    initFlag = systemInit(&vm);
 
    /* Populate the vending machine with data from the csv files. */
-   /* Uncomment this line when you are ready to use command line arguments:
-   dataFlag = loadData(&vm, argv[1], argv[2]); */
+   if(argc == 3){
+      dataFlag = loadData(&vm, argv[1], argv[2]);
+   } else {
+      printf("Invalid number of command line arguments");
+      exit(EXIT_FAILURE);
+   }
 
    /* Testing to see if both systemInit(.) and loadData(.) are ok */
    if (initFlag == FAILURE || dataFlag == FAILURE)
@@ -36,5 +40,4 @@ int main(int argc, char* argv[])
    systemFree(&vm);
 
    exit(EXIT_SUCCESS);
-
 }

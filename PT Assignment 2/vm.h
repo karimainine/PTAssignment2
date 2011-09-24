@@ -9,7 +9,6 @@
 * Start up code provided by Christopher Hoobin and Xiaodong Li
 ******************************************************************************/
 
-
 #ifndef _VM_H
 #define _VM_H
 
@@ -24,6 +23,9 @@
 #define PRODUCT_BRAND_MAX 20
 #define DISTINCT_COINS 6
 
+#define SUCCESS 1
+#define FAILURE 0
+
 /* Structure definitions. */
 typedef struct coin
 {
@@ -37,14 +39,14 @@ typedef struct productNode
    char brand[PRODUCT_BRAND_MAX + 1];
    unsigned price;  /* Stored in cents (not dollars). */
    unsigned qty;
-   struct productNode* nextProduct;
+   struct productNode *nextProduct;
 } ProductNodeType;
 
 typedef struct vendingMachine
 {
    CoinType coins[DISTINCT_COINS];
    unsigned totalCoins;
-   ProductNodeType* headProduct;
+   ProductNodeType *headProduct;
    unsigned totalProducts;
 } VendingMachineType;
 

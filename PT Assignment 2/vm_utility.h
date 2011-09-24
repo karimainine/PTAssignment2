@@ -14,8 +14,8 @@
 
 /* Function prototypes. */
 void readRestOfLine();
-void systemInit(VendingMachineType* vm);
-void loadData(VendingMachineType* vm, char* stockfile, char* coinsFile);
-void systemFree(VendingMachineType* vm);
+int systemInit(VendingMachineType*);
+int loadData(VendingMachineType*, char*, char*);
+void systemFree(VendingMachineType*);
 
 #endif

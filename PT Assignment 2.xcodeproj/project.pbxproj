@@ -12,6 +12,189 @@
 		590FD1CD142DF73900C3CA46 /* vm_options.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1C5142DF73900C3CA46 /* vm_options.c */; };
 		590FD1CE142DF73900C3CA46 /* vm_utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1C8142DF73900C3CA46 /* vm_utility.c */; };
 		590FD1CF142DF73900C3CA46 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1CA142DF73900C3CA46 /* vm.c */; };
+		590FD37E142DFDE100C3CA46 /* hello.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1DF142DFDE000C3CA46 /* hello.c */; };
+		590FD37F142DFDE100C3CA46 /* student.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1E2142DFDE000C3CA46 /* student.c */; };
+		590FD380142DFDE100C3CA46 /* students.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1E9142DFDE000C3CA46 /* students.c */; };
+		590FD381142DFDE100C3CA46 /* variables.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1EC142DFDE000C3CA46 /* variables.c */; };
+		590FD382142DFDE100C3CA46 /* sizeof.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1EF142DFDE000C3CA46 /* sizeof.c */; };
+		590FD383142DFDE100C3CA46 /* typeConversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1F2142DFDE000C3CA46 /* typeConversion.c */; };
+		590FD384142DFDE100C3CA46 /* sideEffects.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1F4142DFDE000C3CA46 /* sideEffects.c */; };
+		590FD385142DFDE100C3CA46 /* pointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1F8142DFDE000C3CA46 /* pointer.c */; };
+		590FD386142DFDE100C3CA46 /* largeValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1FB142DFDE000C3CA46 /* largeValue.c */; };
+		590FD387142DFDE100C3CA46 /* locate.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1FE142DFDE000C3CA46 /* locate.c */; };
+		590FD388142DFDE100C3CA46 /* pointerConvertion.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD1FF142DFDE000C3CA46 /* pointerConvertion.c */; };
+		590FD389142DFDE100C3CA46 /* sizeChar.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD202142DFDE000C3CA46 /* sizeChar.c */; };
+		590FD38A142DFDE100C3CA46 /* unsigned.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD205142DFDE000C3CA46 /* unsigned.c */; };
+		590FD38B142DFDE100C3CA46 /* students.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD20A142DFDE000C3CA46 /* students.c */; };
+		590FD38C142DFDE100C3CA46 /* while.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD20D142DFDE000C3CA46 /* while.c */; };
+		590FD38D142DFDE100C3CA46 /* doWhile.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD210142DFDE000C3CA46 /* doWhile.c */; };
+		590FD38E142DFDE100C3CA46 /* for.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD213142DFDE000C3CA46 /* for.c */; };
+		590FD38F142DFDE100C3CA46 /* infiniteLoop.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD214142DFDE000C3CA46 /* infiniteLoop.c */; };
+		590FD390142DFDE100C3CA46 /* swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD217142DFDE000C3CA46 /* swap.c */; };
+		590FD391142DFDE100C3CA46 /* return.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD21A142DFDE000C3CA46 /* return.c */; };
+		590FD392142DFDE100C3CA46 /* cnt_char.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD21D142DFDE000C3CA46 /* cnt_char.c */; };
+		590FD393142DFDE100C3CA46 /* dangling_else.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD21E142DFDE000C3CA46 /* dangling_else.c */; };
+		590FD394142DFDE100C3CA46 /* factorial.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD221142DFDE000C3CA46 /* factorial.c */; };
+		590FD395142DFDE100C3CA46 /* tableOfPowers.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD224142DFDE000C3CA46 /* tableOfPowers.c */; };
+		590FD396142DFDE100C3CA46 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD228142DFDE000C3CA46 /* array.c */; };
+		590FD397142DFDE100C3CA46 /* boundary.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD22B142DFDE000C3CA46 /* boundary.c */; };
+		590FD398142DFDE100C3CA46 /* arraySize.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD22E142DFDE000C3CA46 /* arraySize.c */; };
+		590FD399142DFDE100C3CA46 /* constantString.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD231142DFDE000C3CA46 /* constantString.c */; };
+		590FD39A142DFDE100C3CA46 /* hello-string.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD232142DFDE000C3CA46 /* hello-string.c */; };
+		590FD39B142DFDE100C3CA46 /* strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD233142DFDE000C3CA46 /* strings.c */; };
+		590FD39C142DFDE100C3CA46 /* student.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD236142DFDE000C3CA46 /* student.c */; };
+		590FD39D142DFDE100C3CA46 /* student.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD23B142DFDE000C3CA46 /* student.c */; };
+		590FD39E142DFDE100C3CA46 /* struct-pointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD23F142DFDE000C3CA46 /* struct-pointer.c */; };
+		590FD39F142DFDE100C3CA46 /* array-2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD242142DFDE000C3CA46 /* array-2d.c */; };
+		590FD3A0142DFDE100C3CA46 /* strArrays.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD245142DFDE000C3CA46 /* strArrays.c */; };
+		590FD3A1142DFDE100C3CA46 /* characters.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD248142DFDE000C3CA46 /* characters.c */; };
+		590FD3A2142DFDE100C3CA46 /* enterAString.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD249142DFDE000C3CA46 /* enterAString.c */; };
+		590FD3A3142DFDE100C3CA46 /* fgets_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD24A142DFDE000C3CA46 /* fgets_1.c */; };
+		590FD3A4142DFDE100C3CA46 /* fgets_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD24B142DFDE000C3CA46 /* fgets_2.c */; };
+		590FD3A5142DFDE100C3CA46 /* test_fgets.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD24C142DFDE000C3CA46 /* test_fgets.c */; };
+		590FD3A6142DFDE100C3CA46 /* test_fgets_overflow.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD24D142DFDE000C3CA46 /* test_fgets_overflow.c */; };
+		590FD3A7142DFDE100C3CA46 /* test_scanf.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD24E142DFDE000C3CA46 /* test_scanf.c */; };
+		590FD3A8142DFDE100C3CA46 /* getInteger-advanced.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD251142DFDE000C3CA46 /* getInteger-advanced.c */; };
+		590FD3A9142DFDE100C3CA46 /* getInteger-basic.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD252142DFDE000C3CA46 /* getInteger-basic.c */; };
+		590FD3AA142DFDE100C3CA46 /* getString-advanced.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD253142DFDE000C3CA46 /* getString-advanced.c */; };
+		590FD3AB142DFDE100C3CA46 /* getString-basic.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD254142DFDE000C3CA46 /* getString-basic.c */; };
+		590FD3AC142DFDE100C3CA46 /* ptr.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD258142DFDE000C3CA46 /* ptr.c */; };
+		590FD3AD142DFDE100C3CA46 /* ptr.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD25A142DFDE000C3CA46 /* ptr.c */; };
+		590FD3AE142DFDE100C3CA46 /* ptr.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD25C142DFDE000C3CA46 /* ptr.c */; };
+		590FD3AF142DFDE100C3CA46 /* ptr.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD25E142DFDE000C3CA46 /* ptr.c */; };
+		590FD3B0142DFDE100C3CA46 /* ptr.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD260142DFDE000C3CA46 /* ptr.c */; };
+		590FD3B1142DFDE100C3CA46 /* arrayParameter.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD263142DFDE000C3CA46 /* arrayParameter.c */; };
+		590FD3B2142DFDE100C3CA46 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD266142DFDE000C3CA46 /* matrix.c */; };
+		590FD3B3142DFDE100C3CA46 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD268142DFDE000C3CA46 /* matrix.c */; };
+		590FD3B4142DFDE100C3CA46 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD26A142DFDE000C3CA46 /* matrix.c */; };
+		590FD3B5142DFDE100C3CA46 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD26C142DFDE000C3CA46 /* matrix.c */; };
+		590FD3B6142DFDE100C3CA46 /* driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD26F142DFDE000C3CA46 /* driver.c */; };
+		590FD3B7142DFDE100C3CA46 /* driver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD270142DFDE000C3CA46 /* driver.o */; };
+		590FD3B8142DFDE100C3CA46 /* f1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD271142DFDE000C3CA46 /* f1.c */; };
+		590FD3B9142DFDE100C3CA46 /* f1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD272142DFDE000C3CA46 /* f1.o */; };
+		590FD3BA142DFDE100C3CA46 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD273142DFDE000C3CA46 /* makefile */; };
+		590FD3BB142DFDE100C3CA46 /* address.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD276142DFDE000C3CA46 /* address.c */; };
+		590FD3BC142DFDE100C3CA46 /* buggy-solution.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD27A142DFDE000C3CA46 /* buggy-solution.c */; };
+		590FD3BD142DFDE100C3CA46 /* buggy.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD27B142DFDE000C3CA46 /* buggy.c */; };
+		590FD3BE142DFDE100C3CA46 /* challenge-answer.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD27F142DFDE000C3CA46 /* challenge-answer.c */; };
+		590FD3BF142DFDE100C3CA46 /* challenge.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD280142DFDE000C3CA46 /* challenge.c */; };
+		590FD3C0142DFDE100C3CA46 /* strcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD285142DFDE000C3CA46 /* strcpy.c */; };
+		590FD3C1142DFDE100C3CA46 /* stderr.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD28C142DFDE000C3CA46 /* stderr.c */; };
+		590FD3C2142DFDE100C3CA46 /* macro.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD28E142DFDE000C3CA46 /* macro.c */; };
+		590FD3C3142DFDE100C3CA46 /* fscanfExample.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD291142DFDE000C3CA46 /* fscanfExample.c */; };
+		590FD3C4142DFDE100C3CA46 /* backward.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD295142DFDE000C3CA46 /* backward.c */; };
+		590FD3C5142DFDE100C3CA46 /* copyFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD298142DFDE000C3CA46 /* copyFile.c */; };
+		590FD3C6142DFDE100C3CA46 /* dbl_space.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD29D142DFDE000C3CA46 /* dbl_space.c */; };
+		590FD3C7142DFDE100C3CA46 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD29F142DFDE000C3CA46 /* test.c */; };
+		590FD3C8142DFDE100C3CA46 /* freadExample.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2A2142DFDE000C3CA46 /* freadExample.c */; };
+		590FD3C9142DFDE100C3CA46 /* pointerToPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2A6142DFDE000C3CA46 /* pointerToPointer.c */; };
+		590FD3CA142DFDE100C3CA46 /* q1b.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2A7142DFDE000C3CA46 /* q1b.c */; };
+		590FD3CB142DFDE100C3CA46 /* q1c.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2A8142DFDE000C3CA46 /* q1c.c */; };
+		590FD3CC142DFDE100C3CA46 /* q1df.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2A9142DFDE000C3CA46 /* q1df.c */; };
+		590FD3CD142DFDE100C3CA46 /* random-solution.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2AF142DFDE000C3CA46 /* random-solution.c */; };
+		590FD3CE142DFDE100C3CA46 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2B0142DFDE000C3CA46 /* random.c */; };
+		590FD3CF142DFDE100C3CA46 /* strtok.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2B3142DFDE000C3CA46 /* strtok.c */; };
+		590FD3D0142DFDE100C3CA46 /* strtok_example2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2B4142DFDE000C3CA46 /* strtok_example2.c */; };
+		590FD3D1142DFDE100C3CA46 /* driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2B8142DFDE000C3CA46 /* driver.c */; };
+		590FD3D2142DFDE100C3CA46 /* driver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2B9142DFDE000C3CA46 /* driver.o */; };
+		590FD3D3142DFDE100C3CA46 /* f1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2BA142DFDE000C3CA46 /* f1.c */; };
+		590FD3D4142DFDE100C3CA46 /* static.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2BE142DFDE000C3CA46 /* static.c */; };
+		590FD3D5142DFDE100C3CA46 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2C0142DFDE000C3CA46 /* calc.c */; };
+		590FD3D6142DFDE100C3CA46 /* calc.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2C2142DFDE000C3CA46 /* calc.o */; };
+		590FD3D7142DFDE100C3CA46 /* driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2C3142DFDE000C3CA46 /* driver.c */; };
+		590FD3D8142DFDE100C3CA46 /* driver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2C5142DFDE000C3CA46 /* driver.o */; };
+		590FD3D9142DFDE100C3CA46 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2C6142DFDE000C3CA46 /* io.c */; };
+		590FD3DA142DFDE100C3CA46 /* io.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2C8142DFDE000C3CA46 /* io.o */; };
+		590FD3DB142DFDE100C3CA46 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2C9142DFDE000C3CA46 /* makefile */; };
+		590FD3DC142DFDE100C3CA46 /* isdigit.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2CE142DFDE000C3CA46 /* isdigit.c */; };
+		590FD3DD142DFDE100C3CA46 /* isdigit_soln.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2CF142DFDE000C3CA46 /* isdigit_soln.c */; };
+		590FD3DE142DFDE100C3CA46 /* sq.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2D2142DFDE000C3CA46 /* sq.c */; };
+		590FD3DF142DFDE100C3CA46 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2D5142DFDE000C3CA46 /* debug.c */; };
+		590FD3E0142DFDE100C3CA46 /* 1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2D7142DFDE000C3CA46 /* 1.c */; };
+		590FD3E1142DFDE100C3CA46 /* 1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2D8142DFDE000C3CA46 /* 1.o */; };
+		590FD3E2142DFDE100C3CA46 /* 2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2D9142DFDE000C3CA46 /* 2.c */; };
+		590FD3E3142DFDE100C3CA46 /* 2.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2DA142DFDE000C3CA46 /* 2.o */; };
+		590FD3E4142DFDE100C3CA46 /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2DB142DFDE000C3CA46 /* global.c */; };
+		590FD3E5142DFDE100C3CA46 /* prn_rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2DF142DFDE000C3CA46 /* prn_rand.c */; };
+		590FD3E6142DFDE100C3CA46 /* 1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2E2142DFDE000C3CA46 /* 1.c */; };
+		590FD3E7142DFDE100C3CA46 /* 1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2E3142DFDE000C3CA46 /* 1.o */; };
+		590FD3E8142DFDE100C3CA46 /* 2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2E4142DFDE000C3CA46 /* 2.c */; };
+		590FD3E9142DFDE100C3CA46 /* 2.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2E5142DFDE000C3CA46 /* 2.o */; };
+		590FD3EA142DFDE100C3CA46 /* intlist-array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2EA142DFDE000C3CA46 /* intlist-array.c */; };
+		590FD3EB142DFDE100C3CA46 /* intlist-array.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2EC142DFDE000C3CA46 /* intlist-array.o */; };
+		590FD3EC142DFDE100C3CA46 /* intlist-main.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2ED142DFDE000C3CA46 /* intlist-main.c */; };
+		590FD3ED142DFDE100C3CA46 /* intlist-main.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2EE142DFDE000C3CA46 /* intlist-main.o */; };
+		590FD3EE142DFDE100C3CA46 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2EF142DFDE000C3CA46 /* makefile */; };
+		590FD3EF142DFDE100C3CA46 /* intlist-array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2F2142DFDE000C3CA46 /* intlist-array.c */; };
+		590FD3F0142DFDE100C3CA46 /* intlist-array.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2F4142DFDE000C3CA46 /* intlist-array.o */; };
+		590FD3F1142DFDE100C3CA46 /* intlist-main.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2F5142DFDE000C3CA46 /* intlist-main.c */; };
+		590FD3F2142DFDE100C3CA46 /* intlist-main.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2F6142DFDE000C3CA46 /* intlist-main.o */; };
+		590FD3F3142DFDE100C3CA46 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2F7142DFDE000C3CA46 /* makefile */; };
+		590FD3F4142DFDE100C3CA46 /* intlist-array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2FA142DFDE000C3CA46 /* intlist-array.c */; };
+		590FD3F5142DFDE100C3CA46 /* intlist-array.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2FC142DFDE000C3CA46 /* intlist-array.o */; };
+		590FD3F6142DFDE100C3CA46 /* intlist-main.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2FD142DFDE000C3CA46 /* intlist-main.c */; };
+		590FD3F7142DFDE100C3CA46 /* intlist-main.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 590FD2FE142DFDE000C3CA46 /* intlist-main.o */; };
+		590FD3F8142DFDE100C3CA46 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD2FF142DFDE000C3CA46 /* makefile */; };
+		590FD3F9142DFDE100C3CA46 /* externVars.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD302142DFDE000C3CA46 /* externVars.c */; };
+		590FD3FA142DFDE100C3CA46 /* scopeVars.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD303142DFDE000C3CA46 /* scopeVars.c */; };
+		590FD3FB142DFDE100C3CA46 /* staticVar.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD304142DFDE000C3CA46 /* staticVar.c */; };
+		590FD3FC142DFDE100C3CA46 /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD308142DFDE000C3CA46 /* linkedlist.c */; };
+		590FD3FD142DFDE100C3CA46 /* calloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD30C142DFDE000C3CA46 /* calloc.c */; };
+		590FD3FE142DFDE100C3CA46 /* intlist-array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD30F142DFDE000C3CA46 /* intlist-array.c */; };
+		590FD3FF142DFDE100C3CA46 /* intlist-dyn-array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD311142DFDE000C3CA46 /* intlist-dyn-array.c */; };
+		590FD400142DFDE100C3CA46 /* intlist-linked-list.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD313142DFDE000C3CA46 /* intlist-linked-list.c */; };
+		590FD401142DFDE100C3CA46 /* intlist-main.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD315142DFDE000C3CA46 /* intlist-main.c */; };
+		590FD402142DFDE100C3CA46 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD316142DFDE000C3CA46 /* makefile */; };
+		590FD403142DFDE100C3CA46 /* malloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD31B142DFDE000C3CA46 /* malloc.c */; };
+		590FD404142DFDE100C3CA46 /* linked-list.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD31E142DFDE000C3CA46 /* linked-list.c */; };
+		590FD405142DFDE100C3CA46 /* linked-list2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD31F142DFDE000C3CA46 /* linked-list2.c */; };
+		590FD406142DFDE100C3CA46 /* listOfCharacters.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD320142DFDE000C3CA46 /* listOfCharacters.c */; };
+		590FD407142DFDE100C3CA46 /* mailingList.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD321142DFDE000C3CA46 /* mailingList.c */; };
+		590FD408142DFDE100C3CA46 /* pointerToPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD322142DFDE000C3CA46 /* pointerToPointer.c */; };
+		590FD409142DFDE100C3CA46 /* realloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD326142DFDE000C3CA46 /* realloc.c */; };
+		590FD40A142DFDE100C3CA46 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD32C142DFDE000C3CA46 /* index.c */; };
+		590FD40B142DFDE100C3CA46 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD330142DFDE000C3CA46 /* index.c */; };
+		590FD40C142DFDE100C3CA46 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD333142DFDE000C3CA46 /* array.c */; };
+		590FD40D142DFDE100C3CA46 /* binary_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD334142DFDE000C3CA46 /* binary_tree.c */; };
+		590FD40E142DFDE100C3CA46 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD336142DFDE000C3CA46 /* linked_list.c */; };
+		590FD40F142DFDE100C3CA46 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD337142DFDE000C3CA46 /* main.c */; };
+		590FD410142DFDE100C3CA46 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD338142DFDE000C3CA46 /* Makefile */; };
+		590FD411142DFDE100C3CA46 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD33D142DFDE000C3CA46 /* index.c */; };
+		590FD412142DFDE100C3CA46 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD341142DFDE000C3CA46 /* index.c */; };
+		590FD413142DFDE100C3CA46 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD344142DFDE000C3CA46 /* index.c */; };
+		590FD414142DFDE100C3CA46 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD347142DFDE100C3CA46 /* tree.c */; };
+		590FD415142DFDE100C3CA46 /* countDown.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD34B142DFDE100C3CA46 /* countDown.c */; };
+		590FD416142DFDE100C3CA46 /* example1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD34C142DFDE100C3CA46 /* example1.c */; };
+		590FD417142DFDE100C3CA46 /* example2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD34D142DFDE100C3CA46 /* example2.c */; };
+		590FD418142DFDE100C3CA46 /* enum.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD350142DFDE100C3CA46 /* enum.c */; };
+		590FD419142DFDE100C3CA46 /* argv.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD353142DFDE100C3CA46 /* argv.c */; };
+		590FD41A142DFDE100C3CA46 /* pointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD354142DFDE100C3CA46 /* pointer.c */; };
+		590FD41B142DFDE100C3CA46 /* pointer2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD355142DFDE100C3CA46 /* pointer2.c */; };
+		590FD41C142DFDE100C3CA46 /* check.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD358142DFDE100C3CA46 /* check.c */; };
+		590FD41D142DFDE100C3CA46 /* check1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD359142DFDE100C3CA46 /* check1.c */; };
+		590FD41E142DFDE100C3CA46 /* block_union.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD35C142DFDE100C3CA46 /* block_union.c */; };
+		590FD41F142DFDE100C3CA46 /* day_enum.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD35D142DFDE100C3CA46 /* day_enum.c */; };
+		590FD420142DFDE100C3CA46 /* function_pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD35E142DFDE100C3CA46 /* function_pointers.c */; };
+		590FD421142DFDE100C3CA46 /* arachnid.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD360142DFDE100C3CA46 /* arachnid.c */; };
+		590FD422142DFDE100C3CA46 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD361142DFDE100C3CA46 /* Makefile */; };
+		590FD423142DFDE100C3CA46 /* westley.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD362142DFDE100C3CA46 /* westley.c */; };
+		590FD424142DFDE100C3CA46 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD363142DFDE100C3CA46 /* Makefile */; };
+		590FD425142DFDE100C3CA46 /* factorial.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD365142DFDE100C3CA46 /* factorial.c */; };
+		590FD426142DFDE100C3CA46 /* fibonacci.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD366142DFDE100C3CA46 /* fibonacci.c */; };
+		590FD427142DFDE100C3CA46 /* fibonacci_mpz.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD367142DFDE100C3CA46 /* fibonacci_mpz.c */; };
+		590FD428142DFDE100C3CA46 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 590FD368142DFDE100C3CA46 /* Makefile */; };
+		590FD429142DFDE100C3CA46 /* natural_sum.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD369142DFDE100C3CA46 /* natural_sum.c */; };
+		590FD42A142DFDE100C3CA46 /* sum_clargs.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD36A142DFDE100C3CA46 /* sum_clargs.c */; };
+		590FD42B142DFDE100C3CA46 /* vehicle_union.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD36B142DFDE100C3CA46 /* vehicle_union.c */; };
+		590FD42C142DFDE100C3CA46 /* raggedArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD36E142DFDE100C3CA46 /* raggedArray.c */; };
+		590FD42D142DFDE100C3CA46 /* example2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD371142DFDE100C3CA46 /* example2.c */; };
+		590FD42E142DFDE100C3CA46 /* natural.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD372142DFDE100C3CA46 /* natural.c */; };
+		590FD42F142DFDE100C3CA46 /* union.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD375142DFDE100C3CA46 /* union.c */; };
+		590FD430142DFDE100C3CA46 /* bsearch1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD378142DFDE100C3CA46 /* bsearch1.c */; };
+		590FD431142DFDE100C3CA46 /* bsearch2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD379142DFDE100C3CA46 /* bsearch2.c */; };
+		590FD432142DFDE100C3CA46 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD37A142DFDE100C3CA46 /* iterator.c */; };
+		590FD433142DFDE100C3CA46 /* qsort1.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD37B142DFDE100C3CA46 /* qsort1.c */; };
+		590FD434142DFDE100C3CA46 /* qsort2.c in Sources */ = {isa = PBXBuildFile; fileRef = 590FD37C142DFDE100C3CA46 /* qsort2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +223,319 @@
 		590FD1C9142DF73900C3CA46 /* vm_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_utility.h; sourceTree = "<group>"; };
 		590FD1CA142DF73900C3CA46 /* vm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
 		590FD1CB142DF73900C3CA46 /* vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm.h; sourceTree = "<group>"; };
+		590FD1DD142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1DE142DFDE000C3CA46 /* hello */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello; sourceTree = "<group>"; };
+		590FD1DF142DFDE000C3CA46 /* hello.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hello.c; sourceTree = "<group>"; };
+		590FD1E1142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1E2142DFDE000C3CA46 /* student.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = student.c; sourceTree = "<group>"; };
+		590FD1E4142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1E5142DFDE000C3CA46 /* report.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = report.txt; sourceTree = "<group>"; };
+		590FD1E6142DFDE000C3CA46 /* result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result.txt; sourceTree = "<group>"; };
+		590FD1E7142DFDE000C3CA46 /* results.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = results.txt; sourceTree = "<group>"; };
+		590FD1E8142DFDE000C3CA46 /* scores.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scores.txt; sourceTree = "<group>"; };
+		590FD1E9142DFDE000C3CA46 /* students.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = students.c; sourceTree = "<group>"; };
+		590FD1EB142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1EC142DFDE000C3CA46 /* variables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = variables.c; sourceTree = "<group>"; };
+		590FD1EE142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1EF142DFDE000C3CA46 /* sizeof.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sizeof.c; sourceTree = "<group>"; };
+		590FD1F1142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1F2142DFDE000C3CA46 /* typeConversion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = typeConversion.c; sourceTree = "<group>"; };
+		590FD1F4142DFDE000C3CA46 /* sideEffects.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sideEffects.c; sourceTree = "<group>"; };
+		590FD1F6142DFDE000C3CA46 /* \ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "\\"; sourceTree = "<group>"; };
+		590FD1F7142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1F8142DFDE000C3CA46 /* pointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pointer.c; sourceTree = "<group>"; };
+		590FD1FA142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1FB142DFDE000C3CA46 /* largeValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = largeValue.c; sourceTree = "<group>"; };
+		590FD1FD142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD1FE142DFDE000C3CA46 /* locate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = locate.c; sourceTree = "<group>"; };
+		590FD1FF142DFDE000C3CA46 /* pointerConvertion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pointerConvertion.c; sourceTree = "<group>"; };
+		590FD201142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD202142DFDE000C3CA46 /* sizeChar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sizeChar.c; sourceTree = "<group>"; };
+		590FD204142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD205142DFDE000C3CA46 /* unsigned.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unsigned.c; sourceTree = "<group>"; };
+		590FD208142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD209142DFDE000C3CA46 /* scores.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scores.txt; sourceTree = "<group>"; };
+		590FD20A142DFDE000C3CA46 /* students.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = students.c; sourceTree = "<group>"; };
+		590FD20C142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD20D142DFDE000C3CA46 /* while.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = while.c; sourceTree = "<group>"; };
+		590FD20F142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD210142DFDE000C3CA46 /* doWhile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = doWhile.c; sourceTree = "<group>"; };
+		590FD212142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD213142DFDE000C3CA46 /* for.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = for.c; sourceTree = "<group>"; };
+		590FD214142DFDE000C3CA46 /* infiniteLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infiniteLoop.c; sourceTree = "<group>"; };
+		590FD216142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD217142DFDE000C3CA46 /* swap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swap.c; sourceTree = "<group>"; };
+		590FD219142DFDE000C3CA46 /* return */ = {isa = PBXFileReference; lastKnownFileType = file; path = return; sourceTree = "<group>"; };
+		590FD21A142DFDE000C3CA46 /* return.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = return.c; sourceTree = "<group>"; };
+		590FD21C142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD21D142DFDE000C3CA46 /* cnt_char.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cnt_char.c; sourceTree = "<group>"; };
+		590FD21E142DFDE000C3CA46 /* dangling_else.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dangling_else.c; sourceTree = "<group>"; };
+		590FD220142DFDE000C3CA46 /* factorial */ = {isa = PBXFileReference; lastKnownFileType = file; path = factorial; sourceTree = "<group>"; };
+		590FD221142DFDE000C3CA46 /* factorial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = factorial.c; sourceTree = "<group>"; };
+		590FD223142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD224142DFDE000C3CA46 /* tableOfPowers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tableOfPowers.c; sourceTree = "<group>"; };
+		590FD227142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD228142DFDE000C3CA46 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		590FD22A142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD22B142DFDE000C3CA46 /* boundary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = boundary.c; sourceTree = "<group>"; };
+		590FD22D142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD22E142DFDE000C3CA46 /* arraySize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arraySize.c; sourceTree = "<group>"; };
+		590FD230142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD231142DFDE000C3CA46 /* constantString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = constantString.c; sourceTree = "<group>"; };
+		590FD232142DFDE000C3CA46 /* hello-string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "hello-string.c"; sourceTree = "<group>"; };
+		590FD233142DFDE000C3CA46 /* strings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strings.c; sourceTree = "<group>"; };
+		590FD235142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD236142DFDE000C3CA46 /* student.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = student.c; sourceTree = "<group>"; };
+		590FD237142DFDE000C3CA46 /* student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = student.h; sourceTree = "<group>"; };
+		590FD239142DFDE000C3CA46 /* gjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gjc.h; sourceTree = "<group>"; };
+		590FD23A142DFDE000C3CA46 /* poker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poker.h; sourceTree = "<group>"; };
+		590FD23B142DFDE000C3CA46 /* student.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = student.c; sourceTree = "<group>"; };
+		590FD23C142DFDE000C3CA46 /* wordlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordlink.h; sourceTree = "<group>"; };
+		590FD23E142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD23F142DFDE000C3CA46 /* struct-pointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "struct-pointer.c"; sourceTree = "<group>"; };
+		590FD241142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD242142DFDE000C3CA46 /* array-2d.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "array-2d.c"; sourceTree = "<group>"; };
+		590FD244142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD245142DFDE000C3CA46 /* strArrays.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strArrays.c; sourceTree = "<group>"; };
+		590FD247142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD248142DFDE000C3CA46 /* characters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = characters.c; sourceTree = "<group>"; };
+		590FD249142DFDE000C3CA46 /* enterAString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enterAString.c; sourceTree = "<group>"; };
+		590FD24A142DFDE000C3CA46 /* fgets_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fgets_1.c; sourceTree = "<group>"; };
+		590FD24B142DFDE000C3CA46 /* fgets_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fgets_2.c; sourceTree = "<group>"; };
+		590FD24C142DFDE000C3CA46 /* test_fgets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_fgets.c; sourceTree = "<group>"; };
+		590FD24D142DFDE000C3CA46 /* test_fgets_overflow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_fgets_overflow.c; sourceTree = "<group>"; };
+		590FD24E142DFDE000C3CA46 /* test_scanf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_scanf.c; sourceTree = "<group>"; };
+		590FD250142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD251142DFDE000C3CA46 /* getInteger-advanced.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "getInteger-advanced.c"; sourceTree = "<group>"; };
+		590FD252142DFDE000C3CA46 /* getInteger-basic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "getInteger-basic.c"; sourceTree = "<group>"; };
+		590FD253142DFDE000C3CA46 /* getString-advanced.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "getString-advanced.c"; sourceTree = "<group>"; };
+		590FD254142DFDE000C3CA46 /* getString-basic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "getString-basic.c"; sourceTree = "<group>"; };
+		590FD257142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD258142DFDE000C3CA46 /* ptr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptr.c; sourceTree = "<group>"; };
+		590FD25A142DFDE000C3CA46 /* ptr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptr.c; sourceTree = "<group>"; };
+		590FD25C142DFDE000C3CA46 /* ptr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptr.c; sourceTree = "<group>"; };
+		590FD25E142DFDE000C3CA46 /* ptr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptr.c; sourceTree = "<group>"; };
+		590FD260142DFDE000C3CA46 /* ptr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptr.c; sourceTree = "<group>"; };
+		590FD262142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD263142DFDE000C3CA46 /* arrayParameter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arrayParameter.c; sourceTree = "<group>"; };
+		590FD265142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD266142DFDE000C3CA46 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		590FD268142DFDE000C3CA46 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		590FD26A142DFDE000C3CA46 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		590FD26C142DFDE000C3CA46 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		590FD26E142DFDE000C3CA46 /* all */ = {isa = PBXFileReference; lastKnownFileType = file; path = all; sourceTree = "<group>"; };
+		590FD26F142DFDE000C3CA46 /* driver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = driver.c; sourceTree = "<group>"; };
+		590FD270142DFDE000C3CA46 /* driver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = driver.o; sourceTree = "<group>"; };
+		590FD271142DFDE000C3CA46 /* f1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = f1.c; sourceTree = "<group>"; };
+		590FD272142DFDE000C3CA46 /* f1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = f1.o; sourceTree = "<group>"; };
+		590FD273142DFDE000C3CA46 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		590FD275142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD276142DFDE000C3CA46 /* address.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = address.c; sourceTree = "<group>"; };
+		590FD278142DFDE000C3CA46 /* buggy */ = {isa = PBXFileReference; lastKnownFileType = file; path = buggy; sourceTree = "<group>"; };
+		590FD279142DFDE000C3CA46 /* buggy-solution */ = {isa = PBXFileReference; lastKnownFileType = file; path = "buggy-solution"; sourceTree = "<group>"; };
+		590FD27A142DFDE000C3CA46 /* buggy-solution.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "buggy-solution.c"; sourceTree = "<group>"; };
+		590FD27B142DFDE000C3CA46 /* buggy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buggy.c; sourceTree = "<group>"; };
+		590FD27C142DFDE000C3CA46 /* gdb.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gdb.pdf; sourceTree = "<group>"; };
+		590FD27D142DFDE000C3CA46 /* gdb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gdb.txt; sourceTree = "<group>"; };
+		590FD27F142DFDE000C3CA46 /* challenge-answer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "challenge-answer.c"; sourceTree = "<group>"; };
+		590FD280142DFDE000C3CA46 /* challenge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = challenge.c; sourceTree = "<group>"; };
+		590FD281142DFDE000C3CA46 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		590FD282142DFDE000C3CA46 /* pointers.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointers.ppt; sourceTree = "<group>"; };
+		590FD284142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD285142DFDE000C3CA46 /* strcpy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strcpy.c; sourceTree = "<group>"; };
+		590FD288142DFDE000C3CA46 /* .stderr.c.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .stderr.c.swp; sourceTree = "<group>"; };
+		590FD289142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD28A142DFDE000C3CA46 /* dump.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dump.txt; sourceTree = "<group>"; };
+		590FD28B142DFDE000C3CA46 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
+		590FD28C142DFDE000C3CA46 /* stderr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stderr.c; sourceTree = "<group>"; };
+		590FD28E142DFDE000C3CA46 /* macro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = macro.c; sourceTree = "<group>"; };
+		590FD290142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD291142DFDE000C3CA46 /* fscanfExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fscanfExample.c; sourceTree = "<group>"; };
+		590FD292142DFDE000C3CA46 /* test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		590FD294142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD295142DFDE000C3CA46 /* backward.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = backward.c; sourceTree = "<group>"; };
+		590FD297142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD298142DFDE000C3CA46 /* copyFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = copyFile.c; sourceTree = "<group>"; };
+		590FD299142DFDE000C3CA46 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		590FD29A142DFDE000C3CA46 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
+		590FD29C142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD29D142DFDE000C3CA46 /* dbl_space.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dbl_space.c; sourceTree = "<group>"; };
+		590FD29E142DFDE000C3CA46 /* dump.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dump.txt; sourceTree = "<group>"; };
+		590FD29F142DFDE000C3CA46 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		590FD2A1142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2A2142DFDE000C3CA46 /* freadExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = freadExample.c; sourceTree = "<group>"; };
+		590FD2A3142DFDE000C3CA46 /* test */ = {isa = PBXFileReference; lastKnownFileType = file; path = test; sourceTree = "<group>"; };
+		590FD2A5142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2A6142DFDE000C3CA46 /* pointerToPointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pointerToPointer.c; sourceTree = "<group>"; };
+		590FD2A7142DFDE000C3CA46 /* q1b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = q1b.c; sourceTree = "<group>"; };
+		590FD2A8142DFDE000C3CA46 /* q1c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = q1c.c; sourceTree = "<group>"; };
+		590FD2A9142DFDE000C3CA46 /* q1df.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = q1df.c; sourceTree = "<group>"; };
+		590FD2AB142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2AC142DFDE000C3CA46 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		590FD2AD142DFDE000C3CA46 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
+		590FD2AE142DFDE000C3CA46 /* random */ = {isa = PBXFileReference; lastKnownFileType = file; path = random; sourceTree = "<group>"; };
+		590FD2AF142DFDE000C3CA46 /* random-solution.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "random-solution.c"; sourceTree = "<group>"; };
+		590FD2B0142DFDE000C3CA46 /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
+		590FD2B2142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2B3142DFDE000C3CA46 /* strtok.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strtok.c; sourceTree = "<group>"; };
+		590FD2B4142DFDE000C3CA46 /* strtok_example2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strtok_example2.c; sourceTree = "<group>"; };
+		590FD2B7142DFDE000C3CA46 /* driver */ = {isa = PBXFileReference; lastKnownFileType = file; path = driver; sourceTree = "<group>"; };
+		590FD2B8142DFDE000C3CA46 /* driver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = driver.c; sourceTree = "<group>"; };
+		590FD2B9142DFDE000C3CA46 /* driver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = driver.o; sourceTree = "<group>"; };
+		590FD2BA142DFDE000C3CA46 /* f1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = f1.c; sourceTree = "<group>"; };
+		590FD2BB142DFDE000C3CA46 /* test */ = {isa = PBXFileReference; lastKnownFileType = file; path = test; sourceTree = "<group>"; };
+		590FD2BD142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2BE142DFDE000C3CA46 /* static.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = static.c; sourceTree = "<group>"; };
+		590FD2C0142DFDE000C3CA46 /* calc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
+		590FD2C1142DFDE000C3CA46 /* calc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calc.h; sourceTree = "<group>"; };
+		590FD2C2142DFDE000C3CA46 /* calc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = calc.o; sourceTree = "<group>"; };
+		590FD2C3142DFDE000C3CA46 /* driver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = driver.c; sourceTree = "<group>"; };
+		590FD2C4142DFDE000C3CA46 /* driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = driver.h; sourceTree = "<group>"; };
+		590FD2C5142DFDE000C3CA46 /* driver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = driver.o; sourceTree = "<group>"; };
+		590FD2C6142DFDE000C3CA46 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
+		590FD2C7142DFDE000C3CA46 /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		590FD2C8142DFDE000C3CA46 /* io.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = io.o; sourceTree = "<group>"; };
+		590FD2C9142DFDE000C3CA46 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		590FD2CA142DFDE000C3CA46 /* makefile-advanced */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "makefile-advanced"; sourceTree = "<group>"; };
+		590FD2CB142DFDE000C3CA46 /* myprog */ = {isa = PBXFileReference; lastKnownFileType = file; path = myprog; sourceTree = "<group>"; };
+		590FD2CD142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2CE142DFDE000C3CA46 /* isdigit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = isdigit.c; sourceTree = "<group>"; };
+		590FD2CF142DFDE000C3CA46 /* isdigit_soln.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = isdigit_soln.c; sourceTree = "<group>"; };
+		590FD2D1142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2D2142DFDE000C3CA46 /* sq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sq.c; sourceTree = "<group>"; };
+		590FD2D4142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2D5142DFDE000C3CA46 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		590FD2D7142DFDE000C3CA46 /* 1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 1.c; sourceTree = "<group>"; };
+		590FD2D8142DFDE000C3CA46 /* 1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 1.o; sourceTree = "<group>"; };
+		590FD2D9142DFDE000C3CA46 /* 2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 2.c; sourceTree = "<group>"; };
+		590FD2DA142DFDE000C3CA46 /* 2.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 2.o; sourceTree = "<group>"; };
+		590FD2DB142DFDE000C3CA46 /* global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = global.c; sourceTree = "<group>"; };
+		590FD2DC142DFDE000C3CA46 /* test */ = {isa = PBXFileReference; lastKnownFileType = file; path = test; sourceTree = "<group>"; };
+		590FD2DE142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD2DF142DFDE000C3CA46 /* prn_rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prn_rand.c; sourceTree = "<group>"; };
+		590FD2E0142DFDE000C3CA46 /* scope.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; path = scope.ppt; sourceTree = "<group>"; };
+		590FD2E2142DFDE000C3CA46 /* 1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 1.c; sourceTree = "<group>"; };
+		590FD2E3142DFDE000C3CA46 /* 1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 1.o; sourceTree = "<group>"; };
+		590FD2E4142DFDE000C3CA46 /* 2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 2.c; sourceTree = "<group>"; };
+		590FD2E5142DFDE000C3CA46 /* 2.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = 2.o; sourceTree = "<group>"; };
+		590FD2E6142DFDE000C3CA46 /* test */ = {isa = PBXFileReference; lastKnownFileType = file; path = test; sourceTree = "<group>"; };
+		590FD2E9142DFDE000C3CA46 /* intlist */ = {isa = PBXFileReference; lastKnownFileType = file; path = intlist; sourceTree = "<group>"; };
+		590FD2EA142DFDE000C3CA46 /* intlist-array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-array.c"; sourceTree = "<group>"; };
+		590FD2EB142DFDE000C3CA46 /* intlist-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "intlist-array.h"; sourceTree = "<group>"; };
+		590FD2EC142DFDE000C3CA46 /* intlist-array.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "intlist-array.o"; sourceTree = "<group>"; };
+		590FD2ED142DFDE000C3CA46 /* intlist-main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-main.c"; sourceTree = "<group>"; };
+		590FD2EE142DFDE000C3CA46 /* intlist-main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "intlist-main.o"; sourceTree = "<group>"; };
+		590FD2EF142DFDE000C3CA46 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		590FD2F1142DFDE000C3CA46 /* intlist */ = {isa = PBXFileReference; lastKnownFileType = file; path = intlist; sourceTree = "<group>"; };
+		590FD2F2142DFDE000C3CA46 /* intlist-array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-array.c"; sourceTree = "<group>"; };
+		590FD2F3142DFDE000C3CA46 /* intlist-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "intlist-array.h"; sourceTree = "<group>"; };
+		590FD2F4142DFDE000C3CA46 /* intlist-array.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "intlist-array.o"; sourceTree = "<group>"; };
+		590FD2F5142DFDE000C3CA46 /* intlist-main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-main.c"; sourceTree = "<group>"; };
+		590FD2F6142DFDE000C3CA46 /* intlist-main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "intlist-main.o"; sourceTree = "<group>"; };
+		590FD2F7142DFDE000C3CA46 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		590FD2F9142DFDE000C3CA46 /* intlist */ = {isa = PBXFileReference; lastKnownFileType = file; path = intlist; sourceTree = "<group>"; };
+		590FD2FA142DFDE000C3CA46 /* intlist-array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-array.c"; sourceTree = "<group>"; };
+		590FD2FB142DFDE000C3CA46 /* intlist-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "intlist-array.h"; sourceTree = "<group>"; };
+		590FD2FC142DFDE000C3CA46 /* intlist-array.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "intlist-array.o"; sourceTree = "<group>"; };
+		590FD2FD142DFDE000C3CA46 /* intlist-main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-main.c"; sourceTree = "<group>"; };
+		590FD2FE142DFDE000C3CA46 /* intlist-main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = "intlist-main.o"; sourceTree = "<group>"; };
+		590FD2FF142DFDE000C3CA46 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		590FD301142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD302142DFDE000C3CA46 /* externVars.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = externVars.c; sourceTree = "<group>"; };
+		590FD303142DFDE000C3CA46 /* scopeVars.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scopeVars.c; sourceTree = "<group>"; };
+		590FD304142DFDE000C3CA46 /* staticVar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = staticVar.c; sourceTree = "<group>"; };
+		590FD307142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD308142DFDE000C3CA46 /* linkedlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
+		590FD30A142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD30B142DFDE000C3CA46 /* a.out.errs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = a.out.errs; sourceTree = "<group>"; };
+		590FD30C142DFDE000C3CA46 /* calloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = calloc.c; sourceTree = "<group>"; };
+		590FD30E142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD30F142DFDE000C3CA46 /* intlist-array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-array.c"; sourceTree = "<group>"; };
+		590FD310142DFDE000C3CA46 /* intlist-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "intlist-array.h"; sourceTree = "<group>"; };
+		590FD311142DFDE000C3CA46 /* intlist-dyn-array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-dyn-array.c"; sourceTree = "<group>"; };
+		590FD312142DFDE000C3CA46 /* intlist-dyn-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "intlist-dyn-array.h"; sourceTree = "<group>"; };
+		590FD313142DFDE000C3CA46 /* intlist-linked-list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-linked-list.c"; sourceTree = "<group>"; };
+		590FD314142DFDE000C3CA46 /* intlist-linked-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "intlist-linked-list.h"; sourceTree = "<group>"; };
+		590FD315142DFDE000C3CA46 /* intlist-main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "intlist-main.c"; sourceTree = "<group>"; };
+		590FD316142DFDE000C3CA46 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		590FD317142DFDE000C3CA46 /* linked-list.ppt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "linked-list.ppt"; sourceTree = "<group>"; };
+		590FD319142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD31A142DFDE000C3CA46 /* a.out.errs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = a.out.errs; sourceTree = "<group>"; };
+		590FD31B142DFDE000C3CA46 /* malloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = malloc.c; sourceTree = "<group>"; };
+		590FD31D142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD31E142DFDE000C3CA46 /* linked-list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "linked-list.c"; sourceTree = "<group>"; };
+		590FD31F142DFDE000C3CA46 /* linked-list2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "linked-list2.c"; sourceTree = "<group>"; };
+		590FD320142DFDE000C3CA46 /* listOfCharacters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = listOfCharacters.c; sourceTree = "<group>"; };
+		590FD321142DFDE000C3CA46 /* mailingList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mailingList.c; sourceTree = "<group>"; };
+		590FD322142DFDE000C3CA46 /* pointerToPointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pointerToPointer.c; sourceTree = "<group>"; };
+		590FD324142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD325142DFDE000C3CA46 /* a.out.errs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = a.out.errs; sourceTree = "<group>"; };
+		590FD326142DFDE000C3CA46 /* realloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = realloc.c; sourceTree = "<group>"; };
+		590FD32A142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD32B142DFDE000C3CA46 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		590FD32C142DFDE000C3CA46 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = index.c; sourceTree = "<group>"; };
+		590FD32E142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD32F142DFDE000C3CA46 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		590FD330142DFDE000C3CA46 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = index.c; sourceTree = "<group>"; };
+		590FD331142DFDE000C3CA46 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		590FD333142DFDE000C3CA46 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		590FD334142DFDE000C3CA46 /* binary_tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binary_tree.c; sourceTree = "<group>"; };
+		590FD335142DFDE000C3CA46 /* container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container.h; sourceTree = "<group>"; };
+		590FD336142DFDE000C3CA46 /* linked_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linked_list.c; sourceTree = "<group>"; };
+		590FD337142DFDE000C3CA46 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		590FD338142DFDE000C3CA46 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		590FD339142DFDE000C3CA46 /* test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
+		590FD33B142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD33C142DFDE000C3CA46 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		590FD33D142DFDE000C3CA46 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = index.c; sourceTree = "<group>"; };
+		590FD33F142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD340142DFDE000C3CA46 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		590FD341142DFDE000C3CA46 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = index.c; sourceTree = "<group>"; };
+		590FD343142DFDE000C3CA46 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		590FD344142DFDE000C3CA46 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = index.c; sourceTree = "<group>"; };
+		590FD346142DFDE000C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD347142DFDE100C3CA46 /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		590FD34A142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD34B142DFDE100C3CA46 /* countDown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = countDown.c; sourceTree = "<group>"; };
+		590FD34C142DFDE100C3CA46 /* example1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example1.c; sourceTree = "<group>"; };
+		590FD34D142DFDE100C3CA46 /* example2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example2.c; sourceTree = "<group>"; };
+		590FD34F142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD350142DFDE100C3CA46 /* enum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enum.c; sourceTree = "<group>"; };
+		590FD352142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD353142DFDE100C3CA46 /* argv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = argv.c; sourceTree = "<group>"; };
+		590FD354142DFDE100C3CA46 /* pointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pointer.c; sourceTree = "<group>"; };
+		590FD355142DFDE100C3CA46 /* pointer2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pointer2.c; sourceTree = "<group>"; };
+		590FD357142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD358142DFDE100C3CA46 /* check.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = check.c; sourceTree = "<group>"; };
+		590FD359142DFDE100C3CA46 /* check1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = check1.c; sourceTree = "<group>"; };
+		590FD35A142DFDE100C3CA46 /* test */ = {isa = PBXFileReference; lastKnownFileType = file; path = test; sourceTree = "<group>"; };
+		590FD35C142DFDE100C3CA46 /* block_union.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = block_union.c; sourceTree = "<group>"; };
+		590FD35D142DFDE100C3CA46 /* day_enum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = day_enum.c; sourceTree = "<group>"; };
+		590FD35E142DFDE100C3CA46 /* function_pointers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = function_pointers.c; sourceTree = "<group>"; };
+		590FD360142DFDE100C3CA46 /* arachnid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arachnid.c; sourceTree = "<group>"; };
+		590FD361142DFDE100C3CA46 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		590FD362142DFDE100C3CA46 /* westley.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = westley.c; sourceTree = "<group>"; };
+		590FD363142DFDE100C3CA46 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		590FD365142DFDE100C3CA46 /* factorial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = factorial.c; sourceTree = "<group>"; };
+		590FD366142DFDE100C3CA46 /* fibonacci.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fibonacci.c; sourceTree = "<group>"; };
+		590FD367142DFDE100C3CA46 /* fibonacci_mpz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fibonacci_mpz.c; sourceTree = "<group>"; };
+		590FD368142DFDE100C3CA46 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		590FD369142DFDE100C3CA46 /* natural_sum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = natural_sum.c; sourceTree = "<group>"; };
+		590FD36A142DFDE100C3CA46 /* sum_clargs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sum_clargs.c; sourceTree = "<group>"; };
+		590FD36B142DFDE100C3CA46 /* vehicle_union.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vehicle_union.c; sourceTree = "<group>"; };
+		590FD36D142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD36E142DFDE100C3CA46 /* raggedArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raggedArray.c; sourceTree = "<group>"; };
+		590FD370142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD371142DFDE100C3CA46 /* example2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example2.c; sourceTree = "<group>"; };
+		590FD372142DFDE100C3CA46 /* natural.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = natural.c; sourceTree = "<group>"; };
+		590FD374142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD375142DFDE100C3CA46 /* union.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = union.c; sourceTree = "<group>"; };
+		590FD377142DFDE100C3CA46 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.out; sourceTree = "<group>"; };
+		590FD378142DFDE100C3CA46 /* bsearch1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bsearch1.c; sourceTree = "<group>"; };
+		590FD379142DFDE100C3CA46 /* bsearch2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bsearch2.c; sourceTree = "<group>"; };
+		590FD37A142DFDE100C3CA46 /* iterator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		590FD37B142DFDE100C3CA46 /* qsort1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qsort1.c; sourceTree = "<group>"; };
+		590FD37C142DFDE100C3CA46 /* qsort2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qsort2.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +543,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590FD3B7142DFDE100C3CA46 /* driver.o in Frameworks */,
+				590FD3B9142DFDE100C3CA46 /* f1.o in Frameworks */,
+				590FD3D2142DFDE100C3CA46 /* driver.o in Frameworks */,
+				590FD3D6142DFDE100C3CA46 /* calc.o in Frameworks */,
+				590FD3D8142DFDE100C3CA46 /* driver.o in Frameworks */,
+				590FD3DA142DFDE100C3CA46 /* io.o in Frameworks */,
+				590FD3E1142DFDE100C3CA46 /* 1.o in Frameworks */,
+				590FD3E3142DFDE100C3CA46 /* 2.o in Frameworks */,
+				590FD3E7142DFDE100C3CA46 /* 1.o in Frameworks */,
+				590FD3E9142DFDE100C3CA46 /* 2.o in Frameworks */,
+				590FD3EB142DFDE100C3CA46 /* intlist-array.o in Frameworks */,
+				590FD3ED142DFDE100C3CA46 /* intlist-main.o in Frameworks */,
+				590FD3F0142DFDE100C3CA46 /* intlist-array.o in Frameworks */,
+				590FD3F2142DFDE100C3CA46 /* intlist-main.o in Frameworks */,
+				590FD3F5142DFDE100C3CA46 /* intlist-array.o in Frameworks */,
+				590FD3F7142DFDE100C3CA46 /* intlist-main.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +584,7 @@
 		590FD1B8142DF67300C3CA46 /* PT Assignment 2 */ = {
 			isa = PBXGroup;
 			children = (
+				590FD1DA142DFDE000C3CA46 /* 2011_s2 */,
 				590FD1C2142DF73900C3CA46 /* coins.csv */,
 				590FD1C3142DF73900C3CA46 /* makefile */,
 				590FD1C4142DF73900C3CA46 /* stock.csv */,
@@ -85,6 +598,1175 @@
 				590FD1BB142DF67300C3CA46 /* PT_Assignment_2.1 */,
 			);
 			path = "PT Assignment 2";
+			sourceTree = "<group>";
+		};
+		590FD1DA142DFDE000C3CA46 /* 2011_s2 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1DB142DFDE000C3CA46 /* lecture01 */,
+				590FD206142DFDE000C3CA46 /* lecture02 */,
+				590FD225142DFDE000C3CA46 /* lecture03 */,
+				590FD255142DFDE000C3CA46 /* lecture04 */,
+				590FD286142DFDE000C3CA46 /* lecture05 */,
+				590FD2B5142DFDE000C3CA46 /* lecture06 */,
+				590FD2E7142DFDE000C3CA46 /* lecture07 */,
+				590FD305142DFDE000C3CA46 /* lecture08 */,
+				590FD327142DFDE000C3CA46 /* lecture09 */,
+				590FD348142DFDE100C3CA46 /* lecture10 */,
+				590FD376142DFDE100C3CA46 /* lecture11 */,
+				590FD37D142DFDE100C3CA46 /* lecture12 */,
+			);
+			name = 2011_s2;
+			path = "../../../../sample code/2011_s2";
+			sourceTree = "<group>";
+		};
+		590FD1DB142DFDE000C3CA46 /* lecture01 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1DC142DFDE000C3CA46 /* 14 */,
+				590FD1E0142DFDE000C3CA46 /* 16 */,
+				590FD1E3142DFDE000C3CA46 /* 17 */,
+				590FD1EA142DFDE000C3CA46 /* 22 */,
+				590FD1ED142DFDE000C3CA46 /* 25 */,
+				590FD1F0142DFDE000C3CA46 /* 29 */,
+				590FD1F3142DFDE000C3CA46 /* 32 */,
+				590FD1F5142DFDE000C3CA46 /* 36 */,
+				590FD1F9142DFDE000C3CA46 /* largeValue */,
+				590FD1FC142DFDE000C3CA46 /* pointer */,
+				590FD200142DFDE000C3CA46 /* sizeChar */,
+				590FD203142DFDE000C3CA46 /* unsigned */,
+			);
+			path = lecture01;
+			sourceTree = "<group>";
+		};
+		590FD1DC142DFDE000C3CA46 /* 14 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1DD142DFDE000C3CA46 /* a.out */,
+				590FD1DE142DFDE000C3CA46 /* hello */,
+				590FD1DF142DFDE000C3CA46 /* hello.c */,
+			);
+			path = 14;
+			sourceTree = "<group>";
+		};
+		590FD1E0142DFDE000C3CA46 /* 16 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1E1142DFDE000C3CA46 /* a.out */,
+				590FD1E2142DFDE000C3CA46 /* student.c */,
+			);
+			path = 16;
+			sourceTree = "<group>";
+		};
+		590FD1E3142DFDE000C3CA46 /* 17 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1E4142DFDE000C3CA46 /* a.out */,
+				590FD1E5142DFDE000C3CA46 /* report.txt */,
+				590FD1E6142DFDE000C3CA46 /* result.txt */,
+				590FD1E7142DFDE000C3CA46 /* results.txt */,
+				590FD1E8142DFDE000C3CA46 /* scores.txt */,
+				590FD1E9142DFDE000C3CA46 /* students.c */,
+			);
+			path = 17;
+			sourceTree = "<group>";
+		};
+		590FD1EA142DFDE000C3CA46 /* 22 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1EB142DFDE000C3CA46 /* a.out */,
+				590FD1EC142DFDE000C3CA46 /* variables.c */,
+			);
+			path = 22;
+			sourceTree = "<group>";
+		};
+		590FD1ED142DFDE000C3CA46 /* 25 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1EE142DFDE000C3CA46 /* a.out */,
+				590FD1EF142DFDE000C3CA46 /* sizeof.c */,
+			);
+			path = 25;
+			sourceTree = "<group>";
+		};
+		590FD1F0142DFDE000C3CA46 /* 29 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1F1142DFDE000C3CA46 /* a.out */,
+				590FD1F2142DFDE000C3CA46 /* typeConversion.c */,
+			);
+			path = 29;
+			sourceTree = "<group>";
+		};
+		590FD1F3142DFDE000C3CA46 /* 32 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1F4142DFDE000C3CA46 /* sideEffects.c */,
+			);
+			path = 32;
+			sourceTree = "<group>";
+		};
+		590FD1F5142DFDE000C3CA46 /* 36 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1F6142DFDE000C3CA46 /* \ */,
+				590FD1F7142DFDE000C3CA46 /* a.out */,
+				590FD1F8142DFDE000C3CA46 /* pointer.c */,
+			);
+			path = 36;
+			sourceTree = "<group>";
+		};
+		590FD1F9142DFDE000C3CA46 /* largeValue */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1FA142DFDE000C3CA46 /* a.out */,
+				590FD1FB142DFDE000C3CA46 /* largeValue.c */,
+			);
+			path = largeValue;
+			sourceTree = "<group>";
+		};
+		590FD1FC142DFDE000C3CA46 /* pointer */ = {
+			isa = PBXGroup;
+			children = (
+				590FD1FD142DFDE000C3CA46 /* a.out */,
+				590FD1FE142DFDE000C3CA46 /* locate.c */,
+				590FD1FF142DFDE000C3CA46 /* pointerConvertion.c */,
+			);
+			path = pointer;
+			sourceTree = "<group>";
+		};
+		590FD200142DFDE000C3CA46 /* sizeChar */ = {
+			isa = PBXGroup;
+			children = (
+				590FD201142DFDE000C3CA46 /* a.out */,
+				590FD202142DFDE000C3CA46 /* sizeChar.c */,
+			);
+			path = sizeChar;
+			sourceTree = "<group>";
+		};
+		590FD203142DFDE000C3CA46 /* unsigned */ = {
+			isa = PBXGroup;
+			children = (
+				590FD204142DFDE000C3CA46 /* a.out */,
+				590FD205142DFDE000C3CA46 /* unsigned.c */,
+			);
+			path = unsigned;
+			sourceTree = "<group>";
+		};
+		590FD206142DFDE000C3CA46 /* lecture02 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD207142DFDE000C3CA46 /* 15 */,
+				590FD20B142DFDE000C3CA46 /* 17 */,
+				590FD20E142DFDE000C3CA46 /* 19 */,
+				590FD211142DFDE000C3CA46 /* 21 */,
+				590FD215142DFDE000C3CA46 /* 34 */,
+				590FD218142DFDE000C3CA46 /* 40 */,
+				590FD21B142DFDE000C3CA46 /* countChars */,
+				590FD21E142DFDE000C3CA46 /* dangling_else.c */,
+				590FD21F142DFDE000C3CA46 /* recursion */,
+				590FD222142DFDE000C3CA46 /* tableOfPowers */,
+			);
+			path = lecture02;
+			sourceTree = "<group>";
+		};
+		590FD207142DFDE000C3CA46 /* 15 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD208142DFDE000C3CA46 /* a.out */,
+				590FD209142DFDE000C3CA46 /* scores.txt */,
+				590FD20A142DFDE000C3CA46 /* students.c */,
+			);
+			path = 15;
+			sourceTree = "<group>";
+		};
+		590FD20B142DFDE000C3CA46 /* 17 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD20C142DFDE000C3CA46 /* a.out */,
+				590FD20D142DFDE000C3CA46 /* while.c */,
+			);
+			path = 17;
+			sourceTree = "<group>";
+		};
+		590FD20E142DFDE000C3CA46 /* 19 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD20F142DFDE000C3CA46 /* a.out */,
+				590FD210142DFDE000C3CA46 /* doWhile.c */,
+			);
+			path = 19;
+			sourceTree = "<group>";
+		};
+		590FD211142DFDE000C3CA46 /* 21 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD212142DFDE000C3CA46 /* a.out */,
+				590FD213142DFDE000C3CA46 /* for.c */,
+				590FD214142DFDE000C3CA46 /* infiniteLoop.c */,
+			);
+			path = 21;
+			sourceTree = "<group>";
+		};
+		590FD215142DFDE000C3CA46 /* 34 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD216142DFDE000C3CA46 /* a.out */,
+				590FD217142DFDE000C3CA46 /* swap.c */,
+			);
+			path = 34;
+			sourceTree = "<group>";
+		};
+		590FD218142DFDE000C3CA46 /* 40 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD219142DFDE000C3CA46 /* return */,
+				590FD21A142DFDE000C3CA46 /* return.c */,
+			);
+			path = 40;
+			sourceTree = "<group>";
+		};
+		590FD21B142DFDE000C3CA46 /* countChars */ = {
+			isa = PBXGroup;
+			children = (
+				590FD21C142DFDE000C3CA46 /* a.out */,
+				590FD21D142DFDE000C3CA46 /* cnt_char.c */,
+			);
+			path = countChars;
+			sourceTree = "<group>";
+		};
+		590FD21F142DFDE000C3CA46 /* recursion */ = {
+			isa = PBXGroup;
+			children = (
+				590FD220142DFDE000C3CA46 /* factorial */,
+				590FD221142DFDE000C3CA46 /* factorial.c */,
+			);
+			path = recursion;
+			sourceTree = "<group>";
+		};
+		590FD222142DFDE000C3CA46 /* tableOfPowers */ = {
+			isa = PBXGroup;
+			children = (
+				590FD223142DFDE000C3CA46 /* a.out */,
+				590FD224142DFDE000C3CA46 /* tableOfPowers.c */,
+			);
+			path = tableOfPowers;
+			sourceTree = "<group>";
+		};
+		590FD225142DFDE000C3CA46 /* lecture03 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD226142DFDE000C3CA46 /* 06 */,
+				590FD229142DFDE000C3CA46 /* 07 */,
+				590FD22C142DFDE000C3CA46 /* 08 */,
+				590FD22F142DFDE000C3CA46 /* 10 */,
+				590FD234142DFDE000C3CA46 /* 12 */,
+				590FD238142DFDE000C3CA46 /* 18 */,
+				590FD23D142DFDE000C3CA46 /* 21 */,
+				590FD240142DFDE000C3CA46 /* 25 */,
+				590FD243142DFDE000C3CA46 /* arraysOfStrings */,
+				590FD246142DFDE000C3CA46 /* buffer */,
+				590FD24F142DFDE000C3CA46 /* input */,
+			);
+			path = lecture03;
+			sourceTree = "<group>";
+		};
+		590FD226142DFDE000C3CA46 /* 06 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD227142DFDE000C3CA46 /* a.out */,
+				590FD228142DFDE000C3CA46 /* array.c */,
+			);
+			path = 06;
+			sourceTree = "<group>";
+		};
+		590FD229142DFDE000C3CA46 /* 07 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD22A142DFDE000C3CA46 /* a.out */,
+				590FD22B142DFDE000C3CA46 /* boundary.c */,
+			);
+			path = 07;
+			sourceTree = "<group>";
+		};
+		590FD22C142DFDE000C3CA46 /* 08 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD22D142DFDE000C3CA46 /* a.out */,
+				590FD22E142DFDE000C3CA46 /* arraySize.c */,
+			);
+			path = 08;
+			sourceTree = "<group>";
+		};
+		590FD22F142DFDE000C3CA46 /* 10 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD230142DFDE000C3CA46 /* a.out */,
+				590FD231142DFDE000C3CA46 /* constantString.c */,
+				590FD232142DFDE000C3CA46 /* hello-string.c */,
+				590FD233142DFDE000C3CA46 /* strings.c */,
+			);
+			path = 10;
+			sourceTree = "<group>";
+		};
+		590FD234142DFDE000C3CA46 /* 12 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD235142DFDE000C3CA46 /* a.out */,
+				590FD236142DFDE000C3CA46 /* student.c */,
+				590FD237142DFDE000C3CA46 /* student.h */,
+			);
+			path = 12;
+			sourceTree = "<group>";
+		};
+		590FD238142DFDE000C3CA46 /* 18 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD239142DFDE000C3CA46 /* gjc.h */,
+				590FD23A142DFDE000C3CA46 /* poker.h */,
+				590FD23B142DFDE000C3CA46 /* student.c */,
+				590FD23C142DFDE000C3CA46 /* wordlink.h */,
+			);
+			path = 18;
+			sourceTree = "<group>";
+		};
+		590FD23D142DFDE000C3CA46 /* 21 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD23E142DFDE000C3CA46 /* a.out */,
+				590FD23F142DFDE000C3CA46 /* struct-pointer.c */,
+			);
+			path = 21;
+			sourceTree = "<group>";
+		};
+		590FD240142DFDE000C3CA46 /* 25 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD241142DFDE000C3CA46 /* a.out */,
+				590FD242142DFDE000C3CA46 /* array-2d.c */,
+			);
+			path = 25;
+			sourceTree = "<group>";
+		};
+		590FD243142DFDE000C3CA46 /* arraysOfStrings */ = {
+			isa = PBXGroup;
+			children = (
+				590FD244142DFDE000C3CA46 /* a.out */,
+				590FD245142DFDE000C3CA46 /* strArrays.c */,
+			);
+			path = arraysOfStrings;
+			sourceTree = "<group>";
+		};
+		590FD246142DFDE000C3CA46 /* buffer */ = {
+			isa = PBXGroup;
+			children = (
+				590FD247142DFDE000C3CA46 /* a.out */,
+				590FD248142DFDE000C3CA46 /* characters.c */,
+				590FD249142DFDE000C3CA46 /* enterAString.c */,
+				590FD24A142DFDE000C3CA46 /* fgets_1.c */,
+				590FD24B142DFDE000C3CA46 /* fgets_2.c */,
+				590FD24C142DFDE000C3CA46 /* test_fgets.c */,
+				590FD24D142DFDE000C3CA46 /* test_fgets_overflow.c */,
+				590FD24E142DFDE000C3CA46 /* test_scanf.c */,
+			);
+			path = buffer;
+			sourceTree = "<group>";
+		};
+		590FD24F142DFDE000C3CA46 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				590FD250142DFDE000C3CA46 /* a.out */,
+				590FD251142DFDE000C3CA46 /* getInteger-advanced.c */,
+				590FD252142DFDE000C3CA46 /* getInteger-basic.c */,
+				590FD253142DFDE000C3CA46 /* getString-advanced.c */,
+				590FD254142DFDE000C3CA46 /* getString-basic.c */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		590FD255142DFDE000C3CA46 /* lecture04 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD256142DFDE000C3CA46 /* 05 */,
+				590FD259142DFDE000C3CA46 /* 06 */,
+				590FD25B142DFDE000C3CA46 /* 07 */,
+				590FD25D142DFDE000C3CA46 /* 08 */,
+				590FD25F142DFDE000C3CA46 /* 09 */,
+				590FD261142DFDE000C3CA46 /* 13 */,
+				590FD264142DFDE000C3CA46 /* 14 */,
+				590FD267142DFDE000C3CA46 /* 16 */,
+				590FD269142DFDE000C3CA46 /* 17 */,
+				590FD26B142DFDE000C3CA46 /* 18 */,
+				590FD26D142DFDE000C3CA46 /* 28 */,
+				590FD274142DFDE000C3CA46 /* address */,
+				590FD277142DFDE000C3CA46 /* gdb */,
+				590FD27E142DFDE000C3CA46 /* gdb-induction */,
+				590FD282142DFDE000C3CA46 /* pointers.ppt */,
+				590FD283142DFDE000C3CA46 /* strcpy */,
+			);
+			path = lecture04;
+			sourceTree = "<group>";
+		};
+		590FD256142DFDE000C3CA46 /* 05 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD257142DFDE000C3CA46 /* a.out */,
+				590FD258142DFDE000C3CA46 /* ptr.c */,
+			);
+			path = 05;
+			sourceTree = "<group>";
+		};
+		590FD259142DFDE000C3CA46 /* 06 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD25A142DFDE000C3CA46 /* ptr.c */,
+			);
+			path = 06;
+			sourceTree = "<group>";
+		};
+		590FD25B142DFDE000C3CA46 /* 07 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD25C142DFDE000C3CA46 /* ptr.c */,
+			);
+			path = 07;
+			sourceTree = "<group>";
+		};
+		590FD25D142DFDE000C3CA46 /* 08 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD25E142DFDE000C3CA46 /* ptr.c */,
+			);
+			path = 08;
+			sourceTree = "<group>";
+		};
+		590FD25F142DFDE000C3CA46 /* 09 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD260142DFDE000C3CA46 /* ptr.c */,
+			);
+			path = 09;
+			sourceTree = "<group>";
+		};
+		590FD261142DFDE000C3CA46 /* 13 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD262142DFDE000C3CA46 /* a.out */,
+				590FD263142DFDE000C3CA46 /* arrayParameter.c */,
+			);
+			path = 13;
+			sourceTree = "<group>";
+		};
+		590FD264142DFDE000C3CA46 /* 14 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD265142DFDE000C3CA46 /* a.out */,
+				590FD266142DFDE000C3CA46 /* matrix.c */,
+			);
+			path = 14;
+			sourceTree = "<group>";
+		};
+		590FD267142DFDE000C3CA46 /* 16 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD268142DFDE000C3CA46 /* matrix.c */,
+			);
+			path = 16;
+			sourceTree = "<group>";
+		};
+		590FD269142DFDE000C3CA46 /* 17 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD26A142DFDE000C3CA46 /* matrix.c */,
+			);
+			path = 17;
+			sourceTree = "<group>";
+		};
+		590FD26B142DFDE000C3CA46 /* 18 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD26C142DFDE000C3CA46 /* matrix.c */,
+			);
+			path = 18;
+			sourceTree = "<group>";
+		};
+		590FD26D142DFDE000C3CA46 /* 28 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD26E142DFDE000C3CA46 /* all */,
+				590FD26F142DFDE000C3CA46 /* driver.c */,
+				590FD270142DFDE000C3CA46 /* driver.o */,
+				590FD271142DFDE000C3CA46 /* f1.c */,
+				590FD272142DFDE000C3CA46 /* f1.o */,
+				590FD273142DFDE000C3CA46 /* makefile */,
+			);
+			path = 28;
+			sourceTree = "<group>";
+		};
+		590FD274142DFDE000C3CA46 /* address */ = {
+			isa = PBXGroup;
+			children = (
+				590FD275142DFDE000C3CA46 /* a.out */,
+				590FD276142DFDE000C3CA46 /* address.c */,
+			);
+			path = address;
+			sourceTree = "<group>";
+		};
+		590FD277142DFDE000C3CA46 /* gdb */ = {
+			isa = PBXGroup;
+			children = (
+				590FD278142DFDE000C3CA46 /* buggy */,
+				590FD279142DFDE000C3CA46 /* buggy-solution */,
+				590FD27A142DFDE000C3CA46 /* buggy-solution.c */,
+				590FD27B142DFDE000C3CA46 /* buggy.c */,
+				590FD27C142DFDE000C3CA46 /* gdb.pdf */,
+				590FD27D142DFDE000C3CA46 /* gdb.txt */,
+			);
+			path = gdb;
+			sourceTree = "<group>";
+		};
+		590FD27E142DFDE000C3CA46 /* gdb-induction */ = {
+			isa = PBXGroup;
+			children = (
+				590FD27F142DFDE000C3CA46 /* challenge-answer.c */,
+				590FD280142DFDE000C3CA46 /* challenge.c */,
+				590FD281142DFDE000C3CA46 /* readme.txt */,
+			);
+			path = "gdb-induction";
+			sourceTree = "<group>";
+		};
+		590FD283142DFDE000C3CA46 /* strcpy */ = {
+			isa = PBXGroup;
+			children = (
+				590FD284142DFDE000C3CA46 /* a.out */,
+				590FD285142DFDE000C3CA46 /* strcpy.c */,
+			);
+			path = strcpy;
+			sourceTree = "<group>";
+		};
+		590FD286142DFDE000C3CA46 /* lecture05 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD287142DFDE000C3CA46 /* 05 */,
+				590FD28D142DFDE000C3CA46 /* 09 */,
+				590FD28F142DFDE000C3CA46 /* 15 */,
+				590FD293142DFDE000C3CA46 /* 19 */,
+				590FD296142DFDE000C3CA46 /* 23 */,
+				590FD29B142DFDE000C3CA46 /* doubleSpace */,
+				590FD2A0142DFDE000C3CA46 /* fread */,
+				590FD2A4142DFDE000C3CA46 /* pointer-exercises */,
+				590FD2AA142DFDE000C3CA46 /* random */,
+				590FD2B1142DFDE000C3CA46 /* strtok */,
+			);
+			path = lecture05;
+			sourceTree = "<group>";
+		};
+		590FD287142DFDE000C3CA46 /* 05 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD288142DFDE000C3CA46 /* .stderr.c.swp */,
+				590FD289142DFDE000C3CA46 /* a.out */,
+				590FD28A142DFDE000C3CA46 /* dump.txt */,
+				590FD28B142DFDE000C3CA46 /* output.txt */,
+				590FD28C142DFDE000C3CA46 /* stderr.c */,
+			);
+			path = 05;
+			sourceTree = "<group>";
+		};
+		590FD28D142DFDE000C3CA46 /* 09 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD28E142DFDE000C3CA46 /* macro.c */,
+			);
+			path = 09;
+			sourceTree = "<group>";
+		};
+		590FD28F142DFDE000C3CA46 /* 15 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD290142DFDE000C3CA46 /* a.out */,
+				590FD291142DFDE000C3CA46 /* fscanfExample.c */,
+				590FD292142DFDE000C3CA46 /* test */,
+			);
+			path = 15;
+			sourceTree = "<group>";
+		};
+		590FD293142DFDE000C3CA46 /* 19 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD294142DFDE000C3CA46 /* a.out */,
+				590FD295142DFDE000C3CA46 /* backward.c */,
+			);
+			path = 19;
+			sourceTree = "<group>";
+		};
+		590FD296142DFDE000C3CA46 /* 23 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD297142DFDE000C3CA46 /* a.out */,
+				590FD298142DFDE000C3CA46 /* copyFile.c */,
+				590FD299142DFDE000C3CA46 /* data.txt */,
+				590FD29A142DFDE000C3CA46 /* output.txt */,
+			);
+			path = 23;
+			sourceTree = "<group>";
+		};
+		590FD29B142DFDE000C3CA46 /* doubleSpace */ = {
+			isa = PBXGroup;
+			children = (
+				590FD29C142DFDE000C3CA46 /* a.out */,
+				590FD29D142DFDE000C3CA46 /* dbl_space.c */,
+				590FD29E142DFDE000C3CA46 /* dump.txt */,
+				590FD29F142DFDE000C3CA46 /* test.c */,
+			);
+			path = doubleSpace;
+			sourceTree = "<group>";
+		};
+		590FD2A0142DFDE000C3CA46 /* fread */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2A1142DFDE000C3CA46 /* a.out */,
+				590FD2A2142DFDE000C3CA46 /* freadExample.c */,
+				590FD2A3142DFDE000C3CA46 /* test */,
+			);
+			path = fread;
+			sourceTree = "<group>";
+		};
+		590FD2A4142DFDE000C3CA46 /* pointer-exercises */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2A5142DFDE000C3CA46 /* a.out */,
+				590FD2A6142DFDE000C3CA46 /* pointerToPointer.c */,
+				590FD2A7142DFDE000C3CA46 /* q1b.c */,
+				590FD2A8142DFDE000C3CA46 /* q1c.c */,
+				590FD2A9142DFDE000C3CA46 /* q1df.c */,
+			);
+			path = "pointer-exercises";
+			sourceTree = "<group>";
+		};
+		590FD2AA142DFDE000C3CA46 /* random */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2AB142DFDE000C3CA46 /* a.out */,
+				590FD2AC142DFDE000C3CA46 /* input.txt */,
+				590FD2AD142DFDE000C3CA46 /* output.txt */,
+				590FD2AE142DFDE000C3CA46 /* random */,
+				590FD2AF142DFDE000C3CA46 /* random-solution.c */,
+				590FD2B0142DFDE000C3CA46 /* random.c */,
+			);
+			path = random;
+			sourceTree = "<group>";
+		};
+		590FD2B1142DFDE000C3CA46 /* strtok */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2B2142DFDE000C3CA46 /* a.out */,
+				590FD2B3142DFDE000C3CA46 /* strtok.c */,
+				590FD2B4142DFDE000C3CA46 /* strtok_example2.c */,
+			);
+			path = strtok;
+			sourceTree = "<group>";
+		};
+		590FD2B5142DFDE000C3CA46 /* lecture06 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2B6142DFDE000C3CA46 /* 10 */,
+				590FD2BC142DFDE000C3CA46 /* 11 */,
+				590FD2BF142DFDE000C3CA46 /* 15 */,
+				590FD2CC142DFDE000C3CA46 /* 25 */,
+				590FD2D0142DFDE000C3CA46 /* 28 */,
+				590FD2D3142DFDE000C3CA46 /* 33 */,
+				590FD2D6142DFDE000C3CA46 /* extern */,
+				590FD2DD142DFDE000C3CA46 /* random */,
+				590FD2E0142DFDE000C3CA46 /* scope.ppt */,
+				590FD2E1142DFDE000C3CA46 /* static2 */,
+			);
+			path = lecture06;
+			sourceTree = "<group>";
+		};
+		590FD2B6142DFDE000C3CA46 /* 10 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2B7142DFDE000C3CA46 /* driver */,
+				590FD2B8142DFDE000C3CA46 /* driver.c */,
+				590FD2B9142DFDE000C3CA46 /* driver.o */,
+				590FD2BA142DFDE000C3CA46 /* f1.c */,
+				590FD2BB142DFDE000C3CA46 /* test */,
+			);
+			path = 10;
+			sourceTree = "<group>";
+		};
+		590FD2BC142DFDE000C3CA46 /* 11 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2BD142DFDE000C3CA46 /* a.out */,
+				590FD2BE142DFDE000C3CA46 /* static.c */,
+			);
+			path = 11;
+			sourceTree = "<group>";
+		};
+		590FD2BF142DFDE000C3CA46 /* 15 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2C0142DFDE000C3CA46 /* calc.c */,
+				590FD2C1142DFDE000C3CA46 /* calc.h */,
+				590FD2C2142DFDE000C3CA46 /* calc.o */,
+				590FD2C3142DFDE000C3CA46 /* driver.c */,
+				590FD2C4142DFDE000C3CA46 /* driver.h */,
+				590FD2C5142DFDE000C3CA46 /* driver.o */,
+				590FD2C6142DFDE000C3CA46 /* io.c */,
+				590FD2C7142DFDE000C3CA46 /* io.h */,
+				590FD2C8142DFDE000C3CA46 /* io.o */,
+				590FD2C9142DFDE000C3CA46 /* makefile */,
+				590FD2CA142DFDE000C3CA46 /* makefile-advanced */,
+				590FD2CB142DFDE000C3CA46 /* myprog */,
+			);
+			path = 15;
+			sourceTree = "<group>";
+		};
+		590FD2CC142DFDE000C3CA46 /* 25 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2CD142DFDE000C3CA46 /* a.out */,
+				590FD2CE142DFDE000C3CA46 /* isdigit.c */,
+				590FD2CF142DFDE000C3CA46 /* isdigit_soln.c */,
+			);
+			path = 25;
+			sourceTree = "<group>";
+		};
+		590FD2D0142DFDE000C3CA46 /* 28 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2D1142DFDE000C3CA46 /* a.out */,
+				590FD2D2142DFDE000C3CA46 /* sq.c */,
+			);
+			path = 28;
+			sourceTree = "<group>";
+		};
+		590FD2D3142DFDE000C3CA46 /* 33 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2D4142DFDE000C3CA46 /* a.out */,
+				590FD2D5142DFDE000C3CA46 /* debug.c */,
+			);
+			path = 33;
+			sourceTree = "<group>";
+		};
+		590FD2D6142DFDE000C3CA46 /* extern */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2D7142DFDE000C3CA46 /* 1.c */,
+				590FD2D8142DFDE000C3CA46 /* 1.o */,
+				590FD2D9142DFDE000C3CA46 /* 2.c */,
+				590FD2DA142DFDE000C3CA46 /* 2.o */,
+				590FD2DB142DFDE000C3CA46 /* global.c */,
+				590FD2DC142DFDE000C3CA46 /* test */,
+			);
+			path = extern;
+			sourceTree = "<group>";
+		};
+		590FD2DD142DFDE000C3CA46 /* random */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2DE142DFDE000C3CA46 /* a.out */,
+				590FD2DF142DFDE000C3CA46 /* prn_rand.c */,
+			);
+			path = random;
+			sourceTree = "<group>";
+		};
+		590FD2E1142DFDE000C3CA46 /* static2 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2E2142DFDE000C3CA46 /* 1.c */,
+				590FD2E3142DFDE000C3CA46 /* 1.o */,
+				590FD2E4142DFDE000C3CA46 /* 2.c */,
+				590FD2E5142DFDE000C3CA46 /* 2.o */,
+				590FD2E6142DFDE000C3CA46 /* test */,
+			);
+			path = static2;
+			sourceTree = "<group>";
+		};
+		590FD2E7142DFDE000C3CA46 /* lecture07 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2E8142DFDE000C3CA46 /* 08 */,
+				590FD2F0142DFDE000C3CA46 /* 08-backup */,
+				590FD2F8142DFDE000C3CA46 /* 08-solutions */,
+				590FD300142DFDE000C3CA46 /* exercises */,
+			);
+			path = lecture07;
+			sourceTree = "<group>";
+		};
+		590FD2E8142DFDE000C3CA46 /* 08 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2E9142DFDE000C3CA46 /* intlist */,
+				590FD2EA142DFDE000C3CA46 /* intlist-array.c */,
+				590FD2EB142DFDE000C3CA46 /* intlist-array.h */,
+				590FD2EC142DFDE000C3CA46 /* intlist-array.o */,
+				590FD2ED142DFDE000C3CA46 /* intlist-main.c */,
+				590FD2EE142DFDE000C3CA46 /* intlist-main.o */,
+				590FD2EF142DFDE000C3CA46 /* makefile */,
+			);
+			path = 08;
+			sourceTree = "<group>";
+		};
+		590FD2F0142DFDE000C3CA46 /* 08-backup */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2F1142DFDE000C3CA46 /* intlist */,
+				590FD2F2142DFDE000C3CA46 /* intlist-array.c */,
+				590FD2F3142DFDE000C3CA46 /* intlist-array.h */,
+				590FD2F4142DFDE000C3CA46 /* intlist-array.o */,
+				590FD2F5142DFDE000C3CA46 /* intlist-main.c */,
+				590FD2F6142DFDE000C3CA46 /* intlist-main.o */,
+				590FD2F7142DFDE000C3CA46 /* makefile */,
+			);
+			path = "08-backup";
+			sourceTree = "<group>";
+		};
+		590FD2F8142DFDE000C3CA46 /* 08-solutions */ = {
+			isa = PBXGroup;
+			children = (
+				590FD2F9142DFDE000C3CA46 /* intlist */,
+				590FD2FA142DFDE000C3CA46 /* intlist-array.c */,
+				590FD2FB142DFDE000C3CA46 /* intlist-array.h */,
+				590FD2FC142DFDE000C3CA46 /* intlist-array.o */,
+				590FD2FD142DFDE000C3CA46 /* intlist-main.c */,
+				590FD2FE142DFDE000C3CA46 /* intlist-main.o */,
+				590FD2FF142DFDE000C3CA46 /* makefile */,
+			);
+			path = "08-solutions";
+			sourceTree = "<group>";
+		};
+		590FD300142DFDE000C3CA46 /* exercises */ = {
+			isa = PBXGroup;
+			children = (
+				590FD301142DFDE000C3CA46 /* a.out */,
+				590FD302142DFDE000C3CA46 /* externVars.c */,
+				590FD303142DFDE000C3CA46 /* scopeVars.c */,
+				590FD304142DFDE000C3CA46 /* staticVar.c */,
+			);
+			path = exercises;
+			sourceTree = "<group>";
+		};
+		590FD305142DFDE000C3CA46 /* lecture08 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD306142DFDE000C3CA46 /* 16-linklist */,
+				590FD309142DFDE000C3CA46 /* calloc */,
+				590FD30D142DFDE000C3CA46 /* interface */,
+				590FD317142DFDE000C3CA46 /* linked-list.ppt */,
+				590FD318142DFDE000C3CA46 /* malloc */,
+				590FD31C142DFDE000C3CA46 /* otherExamples */,
+				590FD323142DFDE000C3CA46 /* realloc */,
+			);
+			path = lecture08;
+			sourceTree = "<group>";
+		};
+		590FD306142DFDE000C3CA46 /* 16-linklist */ = {
+			isa = PBXGroup;
+			children = (
+				590FD307142DFDE000C3CA46 /* a.out */,
+				590FD308142DFDE000C3CA46 /* linkedlist.c */,
+			);
+			path = "16-linklist";
+			sourceTree = "<group>";
+		};
+		590FD309142DFDE000C3CA46 /* calloc */ = {
+			isa = PBXGroup;
+			children = (
+				590FD30A142DFDE000C3CA46 /* a.out */,
+				590FD30B142DFDE000C3CA46 /* a.out.errs */,
+				590FD30C142DFDE000C3CA46 /* calloc.c */,
+			);
+			path = calloc;
+			sourceTree = "<group>";
+		};
+		590FD30D142DFDE000C3CA46 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				590FD30E142DFDE000C3CA46 /* a.out */,
+				590FD30F142DFDE000C3CA46 /* intlist-array.c */,
+				590FD310142DFDE000C3CA46 /* intlist-array.h */,
+				590FD311142DFDE000C3CA46 /* intlist-dyn-array.c */,
+				590FD312142DFDE000C3CA46 /* intlist-dyn-array.h */,
+				590FD313142DFDE000C3CA46 /* intlist-linked-list.c */,
+				590FD314142DFDE000C3CA46 /* intlist-linked-list.h */,
+				590FD315142DFDE000C3CA46 /* intlist-main.c */,
+				590FD316142DFDE000C3CA46 /* makefile */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		590FD318142DFDE000C3CA46 /* malloc */ = {
+			isa = PBXGroup;
+			children = (
+				590FD319142DFDE000C3CA46 /* a.out */,
+				590FD31A142DFDE000C3CA46 /* a.out.errs */,
+				590FD31B142DFDE000C3CA46 /* malloc.c */,
+			);
+			path = malloc;
+			sourceTree = "<group>";
+		};
+		590FD31C142DFDE000C3CA46 /* otherExamples */ = {
+			isa = PBXGroup;
+			children = (
+				590FD31D142DFDE000C3CA46 /* a.out */,
+				590FD31E142DFDE000C3CA46 /* linked-list.c */,
+				590FD31F142DFDE000C3CA46 /* linked-list2.c */,
+				590FD320142DFDE000C3CA46 /* listOfCharacters.c */,
+				590FD321142DFDE000C3CA46 /* mailingList.c */,
+				590FD322142DFDE000C3CA46 /* pointerToPointer.c */,
+			);
+			path = otherExamples;
+			sourceTree = "<group>";
+		};
+		590FD323142DFDE000C3CA46 /* realloc */ = {
+			isa = PBXGroup;
+			children = (
+				590FD324142DFDE000C3CA46 /* a.out */,
+				590FD325142DFDE000C3CA46 /* a.out.errs */,
+				590FD326142DFDE000C3CA46 /* realloc.c */,
+			);
+			path = realloc;
+			sourceTree = "<group>";
+		};
+		590FD327142DFDE000C3CA46 /* lecture09 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD328142DFDE000C3CA46 /* 2006-examples */,
+				590FD332142DFDE000C3CA46 /* container_adt */,
+				590FD33A142DFDE000C3CA46 /* index-solution */,
+				590FD33E142DFDE000C3CA46 /* index-startup */,
+				590FD342142DFDE000C3CA46 /* index-startup-backup */,
+				590FD345142DFDE000C3CA46 /* tree */,
+			);
+			path = lecture09;
+			sourceTree = "<group>";
+		};
+		590FD328142DFDE000C3CA46 /* 2006-examples */ = {
+			isa = PBXGroup;
+			children = (
+				590FD329142DFDE000C3CA46 /* index-solution-modular */,
+				590FD32D142DFDE000C3CA46 /* index-solution-monolithic */,
+				590FD331142DFDE000C3CA46 /* readme.txt */,
+			);
+			path = "2006-examples";
+			sourceTree = "<group>";
+		};
+		590FD329142DFDE000C3CA46 /* index-solution-modular */ = {
+			isa = PBXGroup;
+			children = (
+				590FD32A142DFDE000C3CA46 /* a.out */,
+				590FD32B142DFDE000C3CA46 /* data.txt */,
+				590FD32C142DFDE000C3CA46 /* index.c */,
+			);
+			path = "index-solution-modular";
+			sourceTree = "<group>";
+		};
+		590FD32D142DFDE000C3CA46 /* index-solution-monolithic */ = {
+			isa = PBXGroup;
+			children = (
+				590FD32E142DFDE000C3CA46 /* a.out */,
+				590FD32F142DFDE000C3CA46 /* data.txt */,
+				590FD330142DFDE000C3CA46 /* index.c */,
+			);
+			path = "index-solution-monolithic";
+			sourceTree = "<group>";
+		};
+		590FD332142DFDE000C3CA46 /* container_adt */ = {
+			isa = PBXGroup;
+			children = (
+				590FD333142DFDE000C3CA46 /* array.c */,
+				590FD334142DFDE000C3CA46 /* binary_tree.c */,
+				590FD335142DFDE000C3CA46 /* container.h */,
+				590FD336142DFDE000C3CA46 /* linked_list.c */,
+				590FD337142DFDE000C3CA46 /* main.c */,
+				590FD338142DFDE000C3CA46 /* Makefile */,
+				590FD339142DFDE000C3CA46 /* test.sh */,
+			);
+			path = container_adt;
+			sourceTree = "<group>";
+		};
+		590FD33A142DFDE000C3CA46 /* index-solution */ = {
+			isa = PBXGroup;
+			children = (
+				590FD33B142DFDE000C3CA46 /* a.out */,
+				590FD33C142DFDE000C3CA46 /* data.txt */,
+				590FD33D142DFDE000C3CA46 /* index.c */,
+			);
+			path = "index-solution";
+			sourceTree = "<group>";
+		};
+		590FD33E142DFDE000C3CA46 /* index-startup */ = {
+			isa = PBXGroup;
+			children = (
+				590FD33F142DFDE000C3CA46 /* a.out */,
+				590FD340142DFDE000C3CA46 /* data.txt */,
+				590FD341142DFDE000C3CA46 /* index.c */,
+			);
+			path = "index-startup";
+			sourceTree = "<group>";
+		};
+		590FD342142DFDE000C3CA46 /* index-startup-backup */ = {
+			isa = PBXGroup;
+			children = (
+				590FD343142DFDE000C3CA46 /* data.txt */,
+				590FD344142DFDE000C3CA46 /* index.c */,
+			);
+			path = "index-startup-backup";
+			sourceTree = "<group>";
+		};
+		590FD345142DFDE000C3CA46 /* tree */ = {
+			isa = PBXGroup;
+			children = (
+				590FD346142DFDE000C3CA46 /* a.out */,
+				590FD347142DFDE100C3CA46 /* tree.c */,
+			);
+			path = tree;
+			sourceTree = "<group>";
+		};
+		590FD348142DFDE100C3CA46 /* lecture10 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD349142DFDE100C3CA46 /* cmd-args */,
+				590FD34E142DFDE100C3CA46 /* enum */,
+				590FD351142DFDE100C3CA46 /* exercises */,
+				590FD356142DFDE100C3CA46 /* funcPointer */,
+				590FD35B142DFDE100C3CA46 /* pg_examples_20110510 */,
+				590FD36C142DFDE100C3CA46 /* raggedArrays */,
+				590FD36F142DFDE100C3CA46 /* recursion */,
+				590FD373142DFDE100C3CA46 /* union */,
+			);
+			path = lecture10;
+			sourceTree = "<group>";
+		};
+		590FD349142DFDE100C3CA46 /* cmd-args */ = {
+			isa = PBXGroup;
+			children = (
+				590FD34A142DFDE100C3CA46 /* a.out */,
+				590FD34B142DFDE100C3CA46 /* countDown.c */,
+				590FD34C142DFDE100C3CA46 /* example1.c */,
+				590FD34D142DFDE100C3CA46 /* example2.c */,
+			);
+			path = "cmd-args";
+			sourceTree = "<group>";
+		};
+		590FD34E142DFDE100C3CA46 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				590FD34F142DFDE100C3CA46 /* a.out */,
+				590FD350142DFDE100C3CA46 /* enum.c */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		590FD351142DFDE100C3CA46 /* exercises */ = {
+			isa = PBXGroup;
+			children = (
+				590FD352142DFDE100C3CA46 /* a.out */,
+				590FD353142DFDE100C3CA46 /* argv.c */,
+				590FD354142DFDE100C3CA46 /* pointer.c */,
+				590FD355142DFDE100C3CA46 /* pointer2.c */,
+			);
+			path = exercises;
+			sourceTree = "<group>";
+		};
+		590FD356142DFDE100C3CA46 /* funcPointer */ = {
+			isa = PBXGroup;
+			children = (
+				590FD357142DFDE100C3CA46 /* a.out */,
+				590FD358142DFDE100C3CA46 /* check.c */,
+				590FD359142DFDE100C3CA46 /* check1.c */,
+				590FD35A142DFDE100C3CA46 /* test */,
+			);
+			path = funcPointer;
+			sourceTree = "<group>";
+		};
+		590FD35B142DFDE100C3CA46 /* pg_examples_20110510 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD35C142DFDE100C3CA46 /* block_union.c */,
+				590FD35D142DFDE100C3CA46 /* day_enum.c */,
+				590FD35E142DFDE100C3CA46 /* function_pointers.c */,
+				590FD35F142DFDE100C3CA46 /* ioccc */,
+				590FD363142DFDE100C3CA46 /* Makefile */,
+				590FD364142DFDE100C3CA46 /* recursion */,
+				590FD36A142DFDE100C3CA46 /* sum_clargs.c */,
+				590FD36B142DFDE100C3CA46 /* vehicle_union.c */,
+			);
+			path = pg_examples_20110510;
+			sourceTree = "<group>";
+		};
+		590FD35F142DFDE100C3CA46 /* ioccc */ = {
+			isa = PBXGroup;
+			children = (
+				590FD360142DFDE100C3CA46 /* arachnid.c */,
+				590FD361142DFDE100C3CA46 /* Makefile */,
+				590FD362142DFDE100C3CA46 /* westley.c */,
+			);
+			path = ioccc;
+			sourceTree = "<group>";
+		};
+		590FD364142DFDE100C3CA46 /* recursion */ = {
+			isa = PBXGroup;
+			children = (
+				590FD365142DFDE100C3CA46 /* factorial.c */,
+				590FD366142DFDE100C3CA46 /* fibonacci.c */,
+				590FD367142DFDE100C3CA46 /* fibonacci_mpz.c */,
+				590FD368142DFDE100C3CA46 /* Makefile */,
+				590FD369142DFDE100C3CA46 /* natural_sum.c */,
+			);
+			path = recursion;
+			sourceTree = "<group>";
+		};
+		590FD36C142DFDE100C3CA46 /* raggedArrays */ = {
+			isa = PBXGroup;
+			children = (
+				590FD36D142DFDE100C3CA46 /* a.out */,
+				590FD36E142DFDE100C3CA46 /* raggedArray.c */,
+			);
+			path = raggedArrays;
+			sourceTree = "<group>";
+		};
+		590FD36F142DFDE100C3CA46 /* recursion */ = {
+			isa = PBXGroup;
+			children = (
+				590FD370142DFDE100C3CA46 /* a.out */,
+				590FD371142DFDE100C3CA46 /* example2.c */,
+				590FD372142DFDE100C3CA46 /* natural.c */,
+			);
+			path = recursion;
+			sourceTree = "<group>";
+		};
+		590FD373142DFDE100C3CA46 /* union */ = {
+			isa = PBXGroup;
+			children = (
+				590FD374142DFDE100C3CA46 /* a.out */,
+				590FD375142DFDE100C3CA46 /* union.c */,
+			);
+			path = union;
+			sourceTree = "<group>";
+		};
+		590FD376142DFDE100C3CA46 /* lecture11 */ = {
+			isa = PBXGroup;
+			children = (
+				590FD377142DFDE100C3CA46 /* a.out */,
+				590FD378142DFDE100C3CA46 /* bsearch1.c */,
+				590FD379142DFDE100C3CA46 /* bsearch2.c */,
+				590FD37A142DFDE100C3CA46 /* iterator.c */,
+				590FD37B142DFDE100C3CA46 /* qsort1.c */,
+				590FD37C142DFDE100C3CA46 /* qsort2.c */,
+			);
+			path = lecture11;
+			sourceTree = "<group>";
+		};
+		590FD37D142DFDE100C3CA46 /* lecture12 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lecture12;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +1823,173 @@
 				590FD1CD142DF73900C3CA46 /* vm_options.c in Sources */,
 				590FD1CE142DF73900C3CA46 /* vm_utility.c in Sources */,
 				590FD1CF142DF73900C3CA46 /* vm.c in Sources */,
+				590FD37E142DFDE100C3CA46 /* hello.c in Sources */,
+				590FD37F142DFDE100C3CA46 /* student.c in Sources */,
+				590FD380142DFDE100C3CA46 /* students.c in Sources */,
+				590FD381142DFDE100C3CA46 /* variables.c in Sources */,
+				590FD382142DFDE100C3CA46 /* sizeof.c in Sources */,
+				590FD383142DFDE100C3CA46 /* typeConversion.c in Sources */,
+				590FD384142DFDE100C3CA46 /* sideEffects.c in Sources */,
+				590FD385142DFDE100C3CA46 /* pointer.c in Sources */,
+				590FD386142DFDE100C3CA46 /* largeValue.c in Sources */,
+				590FD387142DFDE100C3CA46 /* locate.c in Sources */,
+				590FD388142DFDE100C3CA46 /* pointerConvertion.c in Sources */,
+				590FD389142DFDE100C3CA46 /* sizeChar.c in Sources */,
+				590FD38A142DFDE100C3CA46 /* unsigned.c in Sources */,
+				590FD38B142DFDE100C3CA46 /* students.c in Sources */,
+				590FD38C142DFDE100C3CA46 /* while.c in Sources */,
+				590FD38D142DFDE100C3CA46 /* doWhile.c in Sources */,
+				590FD38E142DFDE100C3CA46 /* for.c in Sources */,
+				590FD38F142DFDE100C3CA46 /* infiniteLoop.c in Sources */,
+				590FD390142DFDE100C3CA46 /* swap.c in Sources */,
+				590FD391142DFDE100C3CA46 /* return.c in Sources */,
+				590FD392142DFDE100C3CA46 /* cnt_char.c in Sources */,
+				590FD393142DFDE100C3CA46 /* dangling_else.c in Sources */,
+				590FD394142DFDE100C3CA46 /* factorial.c in Sources */,
+				590FD395142DFDE100C3CA46 /* tableOfPowers.c in Sources */,
+				590FD396142DFDE100C3CA46 /* array.c in Sources */,
+				590FD397142DFDE100C3CA46 /* boundary.c in Sources */,
+				590FD398142DFDE100C3CA46 /* arraySize.c in Sources */,
+				590FD399142DFDE100C3CA46 /* constantString.c in Sources */,
+				590FD39A142DFDE100C3CA46 /* hello-string.c in Sources */,
+				590FD39B142DFDE100C3CA46 /* strings.c in Sources */,
+				590FD39C142DFDE100C3CA46 /* student.c in Sources */,
+				590FD39D142DFDE100C3CA46 /* student.c in Sources */,
+				590FD39E142DFDE100C3CA46 /* struct-pointer.c in Sources */,
+				590FD39F142DFDE100C3CA46 /* array-2d.c in Sources */,
+				590FD3A0142DFDE100C3CA46 /* strArrays.c in Sources */,
+				590FD3A1142DFDE100C3CA46 /* characters.c in Sources */,
+				590FD3A2142DFDE100C3CA46 /* enterAString.c in Sources */,
+				590FD3A3142DFDE100C3CA46 /* fgets_1.c in Sources */,
+				590FD3A4142DFDE100C3CA46 /* fgets_2.c in Sources */,
+				590FD3A5142DFDE100C3CA46 /* test_fgets.c in Sources */,
+				590FD3A6142DFDE100C3CA46 /* test_fgets_overflow.c in Sources */,
+				590FD3A7142DFDE100C3CA46 /* test_scanf.c in Sources */,
+				590FD3A8142DFDE100C3CA46 /* getInteger-advanced.c in Sources */,
+				590FD3A9142DFDE100C3CA46 /* getInteger-basic.c in Sources */,
+				590FD3AA142DFDE100C3CA46 /* getString-advanced.c in Sources */,
+				590FD3AB142DFDE100C3CA46 /* getString-basic.c in Sources */,
+				590FD3AC142DFDE100C3CA46 /* ptr.c in Sources */,
+				590FD3AD142DFDE100C3CA46 /* ptr.c in Sources */,
+				590FD3AE142DFDE100C3CA46 /* ptr.c in Sources */,
+				590FD3AF142DFDE100C3CA46 /* ptr.c in Sources */,
+				590FD3B0142DFDE100C3CA46 /* ptr.c in Sources */,
+				590FD3B1142DFDE100C3CA46 /* arrayParameter.c in Sources */,
+				590FD3B2142DFDE100C3CA46 /* matrix.c in Sources */,
+				590FD3B3142DFDE100C3CA46 /* matrix.c in Sources */,
+				590FD3B4142DFDE100C3CA46 /* matrix.c in Sources */,
+				590FD3B5142DFDE100C3CA46 /* matrix.c in Sources */,
+				590FD3B6142DFDE100C3CA46 /* driver.c in Sources */,
+				590FD3B8142DFDE100C3CA46 /* f1.c in Sources */,
+				590FD3BA142DFDE100C3CA46 /* makefile in Sources */,
+				590FD3BB142DFDE100C3CA46 /* address.c in Sources */,
+				590FD3BC142DFDE100C3CA46 /* buggy-solution.c in Sources */,
+				590FD3BD142DFDE100C3CA46 /* buggy.c in Sources */,
+				590FD3BE142DFDE100C3CA46 /* challenge-answer.c in Sources */,
+				590FD3BF142DFDE100C3CA46 /* challenge.c in Sources */,
+				590FD3C0142DFDE100C3CA46 /* strcpy.c in Sources */,
+				590FD3C1142DFDE100C3CA46 /* stderr.c in Sources */,
+				590FD3C2142DFDE100C3CA46 /* macro.c in Sources */,
+				590FD3C3142DFDE100C3CA46 /* fscanfExample.c in Sources */,
+				590FD3C4142DFDE100C3CA46 /* backward.c in Sources */,
+				590FD3C5142DFDE100C3CA46 /* copyFile.c in Sources */,
+				590FD3C6142DFDE100C3CA46 /* dbl_space.c in Sources */,
+				590FD3C7142DFDE100C3CA46 /* test.c in Sources */,
+				590FD3C8142DFDE100C3CA46 /* freadExample.c in Sources */,
+				590FD3C9142DFDE100C3CA46 /* pointerToPointer.c in Sources */,
+				590FD3CA142DFDE100C3CA46 /* q1b.c in Sources */,
+				590FD3CB142DFDE100C3CA46 /* q1c.c in Sources */,
+				590FD3CC142DFDE100C3CA46 /* q1df.c in Sources */,
+				590FD3CD142DFDE100C3CA46 /* random-solution.c in Sources */,
+				590FD3CE142DFDE100C3CA46 /* random.c in Sources */,
+				590FD3CF142DFDE100C3CA46 /* strtok.c in Sources */,
+				590FD3D0142DFDE100C3CA46 /* strtok_example2.c in Sources */,
+				590FD3D1142DFDE100C3CA46 /* driver.c in Sources */,
+				590FD3D3142DFDE100C3CA46 /* f1.c in Sources */,
+				590FD3D4142DFDE100C3CA46 /* static.c in Sources */,
+				590FD3D5142DFDE100C3CA46 /* calc.c in Sources */,
+				590FD3D7142DFDE100C3CA46 /* driver.c in Sources */,
+				590FD3D9142DFDE100C3CA46 /* io.c in Sources */,
+				590FD3DB142DFDE100C3CA46 /* makefile in Sources */,
+				590FD3DC142DFDE100C3CA46 /* isdigit.c in Sources */,
+				590FD3DD142DFDE100C3CA46 /* isdigit_soln.c in Sources */,
+				590FD3DE142DFDE100C3CA46 /* sq.c in Sources */,
+				590FD3DF142DFDE100C3CA46 /* debug.c in Sources */,
+				590FD3E0142DFDE100C3CA46 /* 1.c in Sources */,
+				590FD3E2142DFDE100C3CA46 /* 2.c in Sources */,
+				590FD3E4142DFDE100C3CA46 /* global.c in Sources */,
+				590FD3E5142DFDE100C3CA46 /* prn_rand.c in Sources */,
+				590FD3E6142DFDE100C3CA46 /* 1.c in Sources */,
+				590FD3E8142DFDE100C3CA46 /* 2.c in Sources */,
+				590FD3EA142DFDE100C3CA46 /* intlist-array.c in Sources */,
+				590FD3EC142DFDE100C3CA46 /* intlist-main.c in Sources */,
+				590FD3EE142DFDE100C3CA46 /* makefile in Sources */,
+				590FD3EF142DFDE100C3CA46 /* intlist-array.c in Sources */,
+				590FD3F1142DFDE100C3CA46 /* intlist-main.c in Sources */,
+				590FD3F3142DFDE100C3CA46 /* makefile in Sources */,
+				590FD3F4142DFDE100C3CA46 /* intlist-array.c in Sources */,
+				590FD3F6142DFDE100C3CA46 /* intlist-main.c in Sources */,
+				590FD3F8142DFDE100C3CA46 /* makefile in Sources */,
+				590FD3F9142DFDE100C3CA46 /* externVars.c in Sources */,
+				590FD3FA142DFDE100C3CA46 /* scopeVars.c in Sources */,
+				590FD3FB142DFDE100C3CA46 /* staticVar.c in Sources */,
+				590FD3FC142DFDE100C3CA46 /* linkedlist.c in Sources */,
+				590FD3FD142DFDE100C3CA46 /* calloc.c in Sources */,
+				590FD3FE142DFDE100C3CA46 /* intlist-array.c in Sources */,
+				590FD3FF142DFDE100C3CA46 /* intlist-dyn-array.c in Sources */,
+				590FD400142DFDE100C3CA46 /* intlist-linked-list.c in Sources */,
+				590FD401142DFDE100C3CA46 /* intlist-main.c in Sources */,
+				590FD402142DFDE100C3CA46 /* makefile in Sources */,
+				590FD403142DFDE100C3CA46 /* malloc.c in Sources */,
+				590FD404142DFDE100C3CA46 /* linked-list.c in Sources */,
+				590FD405142DFDE100C3CA46 /* linked-list2.c in Sources */,
+				590FD406142DFDE100C3CA46 /* listOfCharacters.c in Sources */,
+				590FD407142DFDE100C3CA46 /* mailingList.c in Sources */,
+				590FD408142DFDE100C3CA46 /* pointerToPointer.c in Sources */,
+				590FD409142DFDE100C3CA46 /* realloc.c in Sources */,
+				590FD40A142DFDE100C3CA46 /* index.c in Sources */,
+				590FD40B142DFDE100C3CA46 /* index.c in Sources */,
+				590FD40C142DFDE100C3CA46 /* array.c in Sources */,
+				590FD40D142DFDE100C3CA46 /* binary_tree.c in Sources */,
+				590FD40E142DFDE100C3CA46 /* linked_list.c in Sources */,
+				590FD40F142DFDE100C3CA46 /* main.c in Sources */,
+				590FD410142DFDE100C3CA46 /* Makefile in Sources */,
+				590FD411142DFDE100C3CA46 /* index.c in Sources */,
+				590FD412142DFDE100C3CA46 /* index.c in Sources */,
+				590FD413142DFDE100C3CA46 /* index.c in Sources */,
+				590FD414142DFDE100C3CA46 /* tree.c in Sources */,
+				590FD415142DFDE100C3CA46 /* countDown.c in Sources */,
+				590FD416142DFDE100C3CA46 /* example1.c in Sources */,
+				590FD417142DFDE100C3CA46 /* example2.c in Sources */,
+				590FD418142DFDE100C3CA46 /* enum.c in Sources */,
+				590FD419142DFDE100C3CA46 /* argv.c in Sources */,
+				590FD41A142DFDE100C3CA46 /* pointer.c in Sources */,
+				590FD41B142DFDE100C3CA46 /* pointer2.c in Sources */,
+				590FD41C142DFDE100C3CA46 /* check.c in Sources */,
+				590FD41D142DFDE100C3CA46 /* check1.c in Sources */,
+				590FD41E142DFDE100C3CA46 /* block_union.c in Sources */,
+				590FD41F142DFDE100C3CA46 /* day_enum.c in Sources */,
+				590FD420142DFDE100C3CA46 /* function_pointers.c in Sources */,
+				590FD421142DFDE100C3CA46 /* arachnid.c in Sources */,
+				590FD422142DFDE100C3CA46 /* Makefile in Sources */,
+				590FD423142DFDE100C3CA46 /* westley.c in Sources */,
+				590FD424142DFDE100C3CA46 /* Makefile in Sources */,
+				590FD425142DFDE100C3CA46 /* factorial.c in Sources */,
+				590FD426142DFDE100C3CA46 /* fibonacci.c in Sources */,
+				590FD427142DFDE100C3CA46 /* fibonacci_mpz.c in Sources */,
+				590FD428142DFDE100C3CA46 /* Makefile in Sources */,
+				590FD429142DFDE100C3CA46 /* natural_sum.c in Sources */,
+				590FD42A142DFDE100C3CA46 /* sum_clargs.c in Sources */,
+				590FD42B142DFDE100C3CA46 /* vehicle_union.c in Sources */,
+				590FD42C142DFDE100C3CA46 /* raggedArray.c in Sources */,
+				590FD42D142DFDE100C3CA46 /* example2.c in Sources */,
+				590FD42E142DFDE100C3CA46 /* natural.c in Sources */,
+				590FD42F142DFDE100C3CA46 /* union.c in Sources */,
+				590FD430142DFDE100C3CA46 /* bsearch1.c in Sources */,
+				590FD431142DFDE100C3CA46 /* bsearch2.c in Sources */,
+				590FD432142DFDE100C3CA46 /* iterator.c in Sources */,
+				590FD433142DFDE100C3CA46 /* qsort1.c in Sources */,
+				590FD434142DFDE100C3CA46 /* qsort2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +2074,7 @@
 				590FD1C1142DF67300C3CA46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
