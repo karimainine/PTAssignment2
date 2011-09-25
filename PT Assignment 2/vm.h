@@ -19,7 +19,7 @@
 /* Constants. */
 #define COIN_DEFAULT 5
 #define STOCK_DEFAULT 5
-#define PRODUCT_NAME_MAX 40
+#define PRODUCT_NAME_MAX 4099
 #define PRODUCT_BRAND_MAX 20
 #define DISTINCT_COINS 6
 
