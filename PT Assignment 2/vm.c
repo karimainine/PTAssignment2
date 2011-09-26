@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
    /* Populate the vending machine with data from the csv files. */
    if(argc == 3){
       dataFlag = loadData(&vm, argv[1], argv[2]);
+      displayMainMenu();
+      printList(vm.headProduct);
    } else {
       printf("Invalid number of command line arguments");
       exit(EXIT_FAILURE);
