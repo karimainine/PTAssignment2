@@ -13,11 +13,13 @@
 #define _VM_UTILITY_H
 
 /* Function prototypes. */
-void readRestOfLine();
+void readRestOfLine(void);
 int systemInit(VendingMachineType*);
 int loadData(VendingMachineType*, char*, char*);
 void systemFree(VendingMachineType*);
 ProductNodeType *insertNode(ProductNodeType*, ProductNodeType*);
 void printList(ProductNodeType *);
-void displayMainMenu();
+void displayMainMenu(void);
+int getUserInt(char *, int, int, int);
+void printCoins(VendingMachineType);
 #endif

@@ -31,12 +31,68 @@ void readRestOfLine()
    clearerr(stdin);
 }
 
+/****************************************************************************
+ * This function is used in a general function that takes the string entered 
+ * by the user and returns the int value of it. The function is given a max
+ * size to check for the number of characters entered. Any extra characters
+ * will indicate an invalid Input and will be handled using the 
+ * readRestOfLine() function. It is also given a max and a min range for 
+ * the int values to check on. If the input is not within the range, the user
+ * is informed that is an Invalid Input and allowed to try again.
+ 
+ * This function is based on the a function in the Blackboard that handles
+ * the users input, buffer, etc. but changed to fit the application.
+ ****************************************************************************/
+
+int getUserInt(char * message, int maxSize, int minRange, int maxRange)
+{
+   char *myString = malloc(sizeof(maxSize)); 
+   int value;
+   int finished = FALSE;
+   char *ptr;
+   do 
+   {
+      printf("\n%s\n", message);
+      value = -1;
+      
+      fgets(myString, (maxSize + EXTRA_SPACES), stdin);
+      
+      if(myString[0] == '\n')
+      {
+         finished = TRUE;
+      }
+      else if (myString[strlen(myString) - 1] != '\n')
+      {
+         printf("Invalid Input.\n");
+         readRestOfLine();
+      }
+      else
+      {
+         myString[strlen(myString) - 1] = '\0';
+         value = (int) strtol(myString, &ptr, 10);
+         
+         if (value < minRange || value > maxRange || (int)*ptr != 0)
+         {	
+            printf("Invalid Input.\n");
+         }
+         else
+         {
+            finished = TRUE;
+         }
+      }
+   } while (!finished); 
+   free(myString);
+   return value;
+}
+
+
 
 /****************************************************************************
  * Initialises the system to a safe empty state.
  ****************************************************************************/
 int systemInit(VendingMachineType *vm)
 {
+   return SUCCESS;
 }
 
 /*================= insertNode ================== 
@@ -47,16 +103,13 @@ int systemInit(VendingMachineType *vm)
  The function returns the head pointer.
  */
 ProductNodeType *insertNode(ProductNodeType * head, ProductNodeType * node)
-{  
-   ProductNodeType *current, *previous;
-   
+{     
    if(head == NULL){
       head = node;
       head->nextProduct = NULL;
    } else {
       node->nextProduct = head;
       head = node;
-      
    }
    return head;
 } /* insertNode */
@@ -82,14 +135,18 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
 {
    FILE *stock;
    FILE *coins;
-   char tempString[PRODUCT_NAME_MAX + PRODUCT_BRAND_MAX + PRODUCT_PRICE_MAX + PRODUCT_QTY_MAX + 2] = "";
+   char tempString[PRODUCT_NAME_MAX + PRODUCT_BRAND_MAX + PRODUCT_PRICE_MAX + PRODUCT_QTY_MAX + EXTRA_SPACES] = "";
    
    char *name;
    char *brand;
    unsigned quantity;
    unsigned price;
    
+   unsigned coinValue, coinQuantity;
+   
    ProductNodeType *node = NULL;
+   CoinType coin;
+   int i=0;
    
    if((stock=fopen(stockfile, "r")) == NULL) {
       printf("Cannot open stock file.\n");
@@ -100,11 +157,9 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
    } else {      
       /*copying data from files to lists*/
       while(fgets(tempString, sizeof(tempString), stock) != NULL){
-         /*strcpy(current->name, stockData);*/
          name = strtok(tempString,",");
          brand = strtok('\0',",");
          price = (unsigned) atof(strtok('\0',","));
-         /*ptr = strtok('\0',"\0");*/
          quantity = (unsigned) atof(strtok('\0',"\0"));
          
          node = malloc(sizeof(ProductNodeType));
@@ -114,10 +169,37 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
          node->qty = quantity;
          
          vm->headProduct = insertNode(vm->headProduct, node);
+         vm->totalProducts++;
       }
       
       fclose(stock);
+      
+      vm->totalCoins = 0;
+      while(fgets(tempString, sizeof(tempString), coins) != NULL){
+         coinValue = (unsigned) atof(strtok(tempString,","));
+         coinQuantity = (unsigned) atof(strtok('\0',"\0"));
+         
+         coin.value = coinValue;
+         coin.qty = coinQuantity;
+         vm->coins[i] = coin;
+         i++;
+         vm->totalCoins++;
+      }
+
+      fclose(coins);
+      
       return SUCCESS;
+   }
+}
+
+void printCoins(VendingMachineType vm){
+   int i;
+   printf("\nCoin  Quantity\n");
+   printf("----- --------\n");
+   for(i=0; i<vm.totalCoins; i++){
+      CoinType coin = vm.coins[i];
+      
+      printf("%4d %5d\n", coin.value, coin.qty);
    }
 }
 
@@ -156,9 +238,7 @@ void displayMainMenu()
    {
       str = adminMenu[i];
       printf("%s\n",str);
-   }
-   
-   printf("\nSelect your option (1-9):");
+   }   
 }
 
 

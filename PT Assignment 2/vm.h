@@ -26,6 +26,14 @@
 #define PRODUCT_QTY_MAX 3
 #define ADMIN_OPTIONS_NUM 6
 #define USER_OPTIONS_NUM 3
+#define TRUE 1
+#define FALSE 0
+#define EXTRA_SPACES 2
+
+/* Max and Min values for a user input from the menu selection*/
+#define MAX_OPTION_RANGE 9
+#define MIN_OPTION_RANGE 1
+#define MAX_OPTION_INPUT 1
 
 #define SUCCESS 1
 #define FAILURE 0
