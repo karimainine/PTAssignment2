@@ -103,14 +103,25 @@ int systemInit(VendingMachineType *vm)
  The function returns the head pointer.
  */
 ProductNodeType *insertNode(ProductNodeType * head, ProductNodeType * node)
-{     
-   if(head == NULL){
-      head = node;
-      head->nextProduct = NULL;
-   } else {
-      node->nextProduct = head;
-      head = node;
+{  
+   ProductNodeType *current, *previous;
+   
+   current = head;
+   previous = NULL;
+   
+   while (current != NULL && strcmp(current->name, node->name) < 0){
+      previous = current;
+      current = current->nextProduct;
    }
+   
+   node->nextProduct = current;
+   
+   if(previous == NULL){
+      head = node;
+   } else {
+      previous->nextProduct = node;
+   }
+   
    return head;
 } /* insertNode */
 
@@ -173,7 +184,7 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
       }
       
       fclose(stock);
-      
+         
       vm->totalCoins = 0;
       while(fgets(tempString, sizeof(tempString), coins) != NULL){
          coinValue = (unsigned) atof(strtok(tempString,","));
