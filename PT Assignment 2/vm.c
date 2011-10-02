@@ -44,11 +44,12 @@ int main(int argc, char *argv[])
          {
             case 1:
             {
+               purchaseProduct(&vm);
                break;
             }
             case 2:
             {
-               printList(vm.headProduct);
+               displayProducts(&vm);
                break;
             }
             case 3:
@@ -65,7 +66,7 @@ int main(int argc, char *argv[])
             }
             case 6:
             {
-               printCoins(vm);
+               displayCoins(&vm);
                break;
             }
             case 7:

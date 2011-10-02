@@ -18,8 +18,8 @@ int systemInit(VendingMachineType*);
 int loadData(VendingMachineType*, char*, char*);
 void systemFree(VendingMachineType*);
 ProductNodeType *insertNode(ProductNodeType*, ProductNodeType*);
-void printList(ProductNodeType *);
 void displayMainMenu(void);
 int getUserInt(char *, int, int, int);
-void printCoins(VendingMachineType);
+char* getProductName(char*);
+ProductNodeType* getProduct(char*, VendingMachineType *);
 #endif

@@ -92,6 +92,10 @@ int getUserInt(char * message, int maxSize, int minRange, int maxRange)
  ****************************************************************************/
 int systemInit(VendingMachineType *vm)
 {
+   vm->headProduct = NULL;
+   vm->totalCoins = 0;
+   vm->totalProducts = 0;
+   
    return SUCCESS;
 }
 
@@ -124,20 +128,6 @@ ProductNodeType *insertNode(ProductNodeType * head, ProductNodeType * node)
    
    return head;
 } /* insertNode */
-
-void printList(ProductNodeType *p)
-{   
-   printf("\nProduct                                  Brand                Price Qty");
-   printf("\n---------------------------------------- -------------------- ----- ---\n");
-   
-   while (p != NULL)
-   {
-      printf("\n%-40.40s %-20.20s %5d %3d\n ", p->name, p->brand, p->price, p->qty);
-      p = p->nextProduct;
-   } /* while */
-   printf("\n");
-   return;
-} /* printList */
 
 /****************************************************************************
  * Loads all data into the system.
@@ -203,17 +193,6 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
    }
 }
 
-void printCoins(VendingMachineType vm){
-   int i;
-   printf("\nCoin  Quantity\n");
-   printf("----- --------\n");
-   for(i=0; i<vm.totalCoins; i++){
-      CoinType coin = vm.coins[i];
-      
-      printf("%4d %5d\n", coin.value, coin.qty);
-   }
-}
-
 /****************************************************************************
  * This function has an array of Strings containing the menu options. It 
  * loops through the array and prints the options to the user. 
@@ -252,6 +231,54 @@ void displayMainMenu()
    }   
 }
 
+char* getProductName(char *input)
+{
+   char myString[PRODUCT_NAME_MAX + EXTRA_SPACES];
+   int finished = FALSE;
+   int length;
+   
+   do 
+   {
+      printf("\nEnter a product name (1­-40 characters):\n");
+      myString[0] = '\0';
+      fgets(myString, PRODUCT_NAME_MAX + EXTRA_SPACES, stdin);
+      length = (int)strlen(myString) - 1;
+      
+      if(myString[0] == '\n')
+      {
+         input = myString;
+         finished = TRUE;
+      }
+      else if (length < STRING_MIN_CHARS || length > PRODUCT_NAME_MAX)
+      {
+         printf("Invalid Input.\n");
+         if (myString[length] != '\n')
+         {
+            readRestOfLine();
+         }
+      }
+      else
+      {
+         myString[length] = '\0';
+         input = myString;
+         finished = TRUE;
+      }
+   } while (!finished); 
+   
+   return input;
+}
+
+ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
+   ProductNodeType *current;
+   current = vm->headProduct;
+   while(current != NULL){
+      if(strcmp(current->name, productName) == 0){
+         return current;
+      }
+      current = current->nextProduct;
+   }
+   return NULL;
+}
 
 /****************************************************************************
  * Deallocates memory used in the program.

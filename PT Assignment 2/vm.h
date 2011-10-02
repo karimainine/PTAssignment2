@@ -29,6 +29,7 @@
 #define TRUE 1
 #define FALSE 0
 #define EXTRA_SPACES 2
+#define STRING_MIN_CHARS 1
 
 /* Max and Min values for a user input from the menu selection*/
 #define MAX_OPTION_RANGE 9

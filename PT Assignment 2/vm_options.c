@@ -21,6 +21,18 @@
 ****************************************************************************/
 void purchaseProduct(VendingMachineType *vm)
 {
+   char *productName;
+   ProductNodeType *selectedProduct = NULL;
+   productName = getProductName(productName);
+   if(*productName != '\n'){
+      selectedProduct = getProduct(productName, vm);
+      if(selectedProduct != NULL){
+         printf("\nProduct Price: %d\n", selectedProduct->price);
+      }else{
+         printf("\nProduct not found. Please try again.\n");
+      }
+   }
+   
 }
 
 /****************************************************************************
@@ -29,6 +41,17 @@ void purchaseProduct(VendingMachineType *vm)
 ****************************************************************************/
 void displayProducts(VendingMachineType *vm)
 {
+   ProductNodeType *current;
+   current = vm->headProduct;
+   printf("\nProduct                                  Brand                Price Qty");
+   printf("\n---------------------------------------- -------------------- ----- ---\n");
+   
+   while (current != NULL)
+   {
+      printf("%-40.40s %-20.20s %5d %3d\n", current->name, current->brand, current->price, current->qty);
+      current = current->nextProduct;
+   }
+   printf("\n");
 }
 
 /****************************************************************************
@@ -63,6 +86,14 @@ void removeProduct(VendingMachineType *vm)
 ****************************************************************************/
 void displayCoins(VendingMachineType *vm)
 {
+   int i;
+   printf("\nCoin  Quantity\n");
+   printf("----- --------\n");
+   for(i=0; i<vm->totalCoins; i++){
+      CoinType coin = vm->coins[i];
+      
+      printf("%4d %5d\n", coin.value, coin.qty);
+   }
 }
 
 /****************************************************************************
