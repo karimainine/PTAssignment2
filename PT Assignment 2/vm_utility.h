@@ -20,6 +20,8 @@ void systemFree(VendingMachineType*);
 ProductNodeType *insertNode(ProductNodeType*, ProductNodeType*);
 void displayMainMenu(void);
 int getUserInt(char *, int, int, int);
-char* getProductName(char*);
+void getProductName(char*);
 ProductNodeType* getProduct(char*, VendingMachineType *);
+double makePayment(double);
+int getCoins(void);
 #endif

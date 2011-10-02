@@ -231,7 +231,7 @@ void displayMainMenu()
    }   
 }
 
-char* getProductName(char *input)
+void getProductName(char *input)
 {
    char myString[PRODUCT_NAME_MAX + EXTRA_SPACES];
    int finished = FALSE;
@@ -246,7 +246,8 @@ char* getProductName(char *input)
       
       if(myString[0] == '\n')
       {
-         input = myString;
+         /*input = myString;*/
+         strcpy(input, myString);
          finished = TRUE;
       }
       else if (length < STRING_MIN_CHARS || length > PRODUCT_NAME_MAX)
@@ -260,12 +261,11 @@ char* getProductName(char *input)
       else
       {
          myString[length] = '\0';
-         input = myString;
+         /*input = myString;*/
+         strcpy(input, myString);
          finished = TRUE;
       }
-   } while (!finished); 
-   
-   return input;
+   } while (!finished);     
 }
 
 ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
@@ -278,6 +278,55 @@ ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
       current = current->nextProduct;
    }
    return NULL;
+}
+
+double makePayment(double price){
+   double remainingValue;
+   double change = 0;
+   int coinInserted;
+   
+   remainingValue = price;
+   do {
+      printf("\nEnter a coin (%0.2f remaining): " , remainingValue);
+      coinInserted = getCoins();
+      if(coinInserted < remainingValue){
+         remainingValue = remainingValue - coinInserted;
+      }else{
+         change = coinInserted - remainingValue ;
+         remainingValue = 0;
+      }
+   } while (remainingValue > 0);   
+   return change;
+}
+
+int getCoins(){
+   char myString[MAX_COIN_SIZE + EXTRA_SPACES]; 
+   int value;
+   int finished = FALSE;
+   char *ptr;
+   do 
+   {
+      value = -1;
+      fgets(myString, MAX_COIN_SIZE + EXTRA_SPACES, stdin);
+      
+      if(myString[0] == '\n')
+      {
+         finished = TRUE;
+      }
+      else if (myString[strlen(myString) - 1] != '\n')
+      {
+         printf("Invalid Input.\n");
+         readRestOfLine();
+      }
+      else
+      {
+         myString[strlen(myString) - 1] = '\0';
+         value = (int) strtol(myString, &ptr, 10);
+         finished = TRUE;
+      }
+   } while (!finished); 
+   
+   return value;
 }
 
 /****************************************************************************

@@ -21,13 +21,16 @@
 ****************************************************************************/
 void purchaseProduct(VendingMachineType *vm)
 {
-   char *productName;
+   char productName [PRODUCT_NAME_MAX + EXTRA_SPACES];
    ProductNodeType *selectedProduct = NULL;
-   productName = getProductName(productName);
+   double change;
+   getProductName(productName);
    if(*productName != '\n'){
       selectedProduct = getProduct(productName, vm);
       if(selectedProduct != NULL){
          printf("\nProduct Price: %d\n", selectedProduct->price);
+         change = makePayment(selectedProduct->price);
+         printf("Thank you for purchasing %s\nYour change is: %f\n", selectedProduct->name, change);
       }else{
          printf("\nProduct not found. Please try again.\n");
       }
