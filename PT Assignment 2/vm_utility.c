@@ -163,14 +163,20 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
          price = (unsigned) atof(strtok('\0',","));
          quantity = (unsigned) atof(strtok('\0',"\0"));
          
-         node = malloc(sizeof(ProductNodeType));
-         strcpy(node->name, name);
-         strcpy(node->brand, brand);
-         node->price = price;
-         node->qty = quantity;
+         node = getProduct(name, vm);
          
-         vm->headProduct = insertNode(vm->headProduct, node);
-         vm->totalProducts++;
+         if(node != NULL && node->price == price){
+            node->qty += quantity;
+         } else {
+            node = malloc(sizeof(ProductNodeType));
+            strcpy(node->name, name);
+            strcpy(node->brand, brand);
+            node->price = price;
+            node->qty = quantity;
+            
+            vm->headProduct = insertNode(vm->headProduct, node);
+            vm->totalProducts++;
+         }
       }
       
       fclose(stock);
@@ -265,7 +271,42 @@ void getProductName(char *input)
          strcpy(input, myString);
          finished = TRUE;
       }
-   } while (!finished);     
+   } while (!finished);
+}
+
+void getBrandName(char *input)
+{
+   char myString[PRODUCT_BRAND_MAX + EXTRA_SPACES];
+   int finished = FALSE;
+   int length;
+   
+   do 
+   {
+      printf("\nEnter a brand name (1­-20 characters):\n");
+      myString[0] = '\0';
+      fgets(myString, PRODUCT_BRAND_MAX + EXTRA_SPACES, stdin);
+      length = (int)strlen(myString) - 1;
+      
+      if(myString[0] == '\n')
+      {
+         strcpy(input, myString);
+         finished = TRUE;
+      }
+      else if (length < STRING_MIN_CHARS || length > PRODUCT_BRAND_MAX)
+      {
+         printf("Invalid Input.\n");
+         if (myString[length] != '\n')
+         {
+            readRestOfLine();
+         }
+      }
+      else
+      {
+         myString[length] = '\0';
+         strcpy(input, myString);
+         finished = TRUE;
+      }
+   } while (!finished);
 }
 
 ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
@@ -280,34 +321,41 @@ ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
    return NULL;
 }
 
-double makePayment(double price){
+double makePayment(double price, VendingMachineType *vm, int *paymentComplete){
    double remainingValue;
    double change = 0;
    int coinInserted;
-   
    remainingValue = price;
    do {
-      printf("\nEnter a coin (%0.2f remaining): " , remainingValue);
-      coinInserted = getCoins();
-      if(coinInserted < remainingValue){
-         remainingValue = remainingValue - coinInserted;
-      }else{
-         change = coinInserted - remainingValue ;
-         remainingValue = 0;
+      printf("\nEnter a coin ($%.2f remaining): " , remainingValue/100);
+      coinInserted = getCoins(vm);
+      if(coinInserted != -1){
+         if(coinInserted < remainingValue){
+            remainingValue = remainingValue - coinInserted;
+         } else {
+            change = coinInserted - remainingValue;
+            remainingValue = 0;
+         }
+      } else {
+         *paymentComplete = FAILURE;
+         return (price - remainingValue);
       }
-   } while (remainingValue > 0);   
+   } while (remainingValue > 0);
+   
+   *paymentComplete = SUCCESS;
    return change;
 }
 
-int getCoins(){
-   char myString[MAX_COIN_SIZE + EXTRA_SPACES]; 
+int getCoins(VendingMachineType *vm){
+   char myString[PRODUCT_PRICE_MAX + EXTRA_SPACES]; 
    int value;
    int finished = FALSE;
    char *ptr;
+   int i;
    do 
    {
       value = -1;
-      fgets(myString, MAX_COIN_SIZE + EXTRA_SPACES, stdin);
+      fgets(myString, PRODUCT_PRICE_MAX + EXTRA_SPACES, stdin);
       
       if(myString[0] == '\n')
       {
@@ -322,11 +370,30 @@ int getCoins(){
       {
          myString[strlen(myString) - 1] = '\0';
          value = (int) strtol(myString, &ptr, 10);
-         finished = TRUE;
+         for(i=0; i<DISTINCT_COINS; i++){
+            if(value == vm->coins[i].value){
+               vm->coins[i].qty++;
+               return value;
+            }
+         }
+         printf("Invalid coin value. Please Enter a valid coin value: ");
       }
-   } while (!finished); 
-   
+   } while (!finished);
    return value;
+}
+
+void printChangeCoins(double change, VendingMachineType* vm){
+   int i;
+   printf("Your change coins are: ");
+   for(i=0; (i<DISTINCT_COINS && change > 0); i++){
+      while (change >= vm->coins[i].value && vm->coins[i].qty > 0){
+         change = change - ((double)(vm->coins[i].value));
+         printf("$%.2f ",((double)(vm->coins[i].value))/100);
+         vm->coins[i].qty--;
+      }
+      
+   }
+   printf("\n");
 }
 
 /****************************************************************************

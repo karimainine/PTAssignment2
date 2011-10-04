@@ -30,7 +30,10 @@
 #define FALSE 0
 #define EXTRA_SPACES 2
 #define STRING_MIN_CHARS 1
-#define MAX_COIN_SIZE 4
+#define MAX_PRODUCT_PRICE 995
+#define MIN_PRODUCT_PRICE 5
+#define MAX_PRODUCT_QUANTITY 999
+#define MIN_PRODUCT_QUANTITY 0
 
 /* Max and Min values for a user input from the menu selection*/
 #define MAX_OPTION_RANGE 9

@@ -58,6 +58,7 @@ int main(int argc, char *argv[])
             }
             case 4:
             {
+               addProduct(&vm);
                break;
             }
             case 5:
