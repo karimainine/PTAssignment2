@@ -54,9 +54,6 @@ int main(int argc, char *argv[])
             }
             case 3:
             {
-               saveData(&vm, argv[1], argv[2]);
-               printf("\nData Saved. Good Bye!\n");
-               return EXIT_SUCCESS;
                break;
             }
             case 4:
@@ -66,7 +63,6 @@ int main(int argc, char *argv[])
             }
             case 5:
             {
-               removeProduct(&vm);
                break;
             }
             case 6:
@@ -76,12 +72,10 @@ int main(int argc, char *argv[])
             }
             case 7:
             {
-               restockProducts(&vm);
                break;
             }
             case 8:
             {
-               restockCoins(&vm);
                break;
             }
             case 9:

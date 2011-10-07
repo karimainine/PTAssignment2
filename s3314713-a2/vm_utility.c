@@ -396,32 +396,6 @@ void printChangeCoins(double change, VendingMachineType* vm){
    printf("\n");
 }
 
-void deleteNode(VendingMachineType* vm, char* productName){
-   ProductNodeType *previous = NULL;
-   ProductNodeType *current = vm->headProduct;
-   int found = FAILURE;
-   for (current = vm->headProduct; current != NULL; current = current->nextProduct){
-      if(strcmp(current->name, productName) == 0){
-         found = SUCCESS;
-         if(previous == NULL){
-            vm->headProduct = current->nextProduct;
-         } else {
-            previous->nextProduct = current->nextProduct;
-         }
-         free(current);
-         vm->totalProducts--;
-      } else {
-         previous = current; 
-      }
-   }
-   
-   if(found == SUCCESS){
-      printf("\n%s removed from the vending machine\n", productName);
-   } else {
-      printf("\n%s not found in the vending machine. Please try again.\n", productName);
-   }
-}
-
 /****************************************************************************
  * Deallocates memory used in the program.
  ****************************************************************************/

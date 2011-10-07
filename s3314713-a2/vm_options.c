@@ -127,11 +127,6 @@ void addProduct(VendingMachineType *vm)
 ****************************************************************************/
 void removeProduct(VendingMachineType *vm)
 {
-   char productName [PRODUCT_NAME_MAX];
-   getProductName(productName);
-   if(*productName != '\n'){
-      deleteNode(vm, productName);
-   }
 }
 
 /****************************************************************************
@@ -164,13 +159,6 @@ void displayCoins(VendingMachineType *vm)
 ****************************************************************************/
 void restockProducts(VendingMachineType* vm)
 {
-   ProductNodeType *current = vm->headProduct;
-   while (current != NULL)
-   {
-      current->qty = STOCK_DEFAULT;
-      current = current->nextProduct;
-   }
-   printf("\nAll products have been restocked to the default level.\n");
 }
 
 /****************************************************************************
@@ -180,12 +168,4 @@ void restockProducts(VendingMachineType* vm)
 ****************************************************************************/
 void restockCoins(VendingMachineType *vm)
 {
-   int i;
-   CoinType *coin;
-   
-   for(i=0; i<DISTINCT_COINS; i++){
-      coin = &(vm->coins)[i];
-      coin->qty = COIN_DEFAULT;
-   }
-   printf("\nAll coins have been restocked to the default level.\n");
 }

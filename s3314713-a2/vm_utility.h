@@ -26,5 +26,4 @@ ProductNodeType* getProduct(char*, VendingMachineType *);
 double makePayment(double, VendingMachineType*, int*);
 int getCoins(VendingMachineType*);
 void printChangeCoins(double, VendingMachineType*);
-void deleteNode(VendingMachineType*, char*);
 #endif
