@@ -76,6 +76,30 @@ void displayProducts(VendingMachineType *vm)
 ****************************************************************************/
 void saveData(VendingMachineType *vm, char *stockFile, char *coinsFile)
 {
+   FILE *stock;
+   FILE *coins;
+   int i;
+   unsigned* price;
+   int* quantity;
+   ProductNodeType *current = vm->headProduct;
+   
+   if((stock=fopen(stockFile, "w")) == NULL) {
+      printf("Cannot open stock file.\n");
+   } else if((coins=fopen(coinsFile, "w")) == NULL) {
+      printf("Cannot open coins file.\n");
+   } else {      
+      /*copying data from files to lists*/
+      while(current != NULL){
+         fprintf(stock,"%s,%s,%d,%d\n",current->name, current->brand, current->price, current->qty);
+         current = current->nextProduct;
+      }
+      fclose(stock);
+      for(i=0; i<vm->totalCoins; i++){
+         CoinType coin = vm->coins[i];
+         fprintf(coins,"%d,%d\n", coin.value, coin.qty);
+      }
+      fclose(coins);      
+   }
 }
 
 /****************************************************************************
