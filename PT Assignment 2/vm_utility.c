@@ -106,11 +106,11 @@ int systemInit(VendingMachineType *vm)
  name contains person's name to be inserted.
  The function returns the head pointer.
  */
-ProductNodeType *insertNode(ProductNodeType * head, ProductNodeType * node)
+void insertNode(VendingMachineType * vm, ProductNodeType * node)
 {  
    ProductNodeType *current, *previous;
    
-   current = head;
+   current = vm->headProduct;
    previous = NULL;
    
    while (current != NULL && strcmp(current->name, node->name) < 0){
@@ -121,12 +121,10 @@ ProductNodeType *insertNode(ProductNodeType * head, ProductNodeType * node)
    node->nextProduct = current;
    
    if(previous == NULL){
-      head = node;
+      vm->headProduct = node;
    } else {
       previous->nextProduct = node;
    }
-   
-   return head;
 } /* insertNode */
 
 /****************************************************************************
@@ -148,6 +146,7 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
    ProductNodeType *node = NULL;
    CoinType coin;
    int i=0;
+   int j=0;
    
    if((stock=fopen(stockfile, "r")) == NULL) {
       printf("Cannot open stock file.\n");
@@ -165,7 +164,7 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
                case 0:
                {
                   if(strlen(tokenString) > PRODUCT_NAME_MAX){
-                     printf("\n1.Invalid file format.\n");
+                     printf("\nInvalid file format.\n");
                      return FAILURE;
                   }else{
                      strcpy(name, tokenString);
@@ -175,7 +174,7 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
                case 1:
                {
                   if(strlen(tokenString) > PRODUCT_BRAND_MAX){
-                     printf("\n2.Invalid file format.\n");
+                     printf("\nInvalid file format.\n");
                      return FAILURE;
                   }else{
                      strcpy(brand, tokenString);
@@ -185,8 +184,8 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
                case 2:
                {
                   price = (unsigned) strtol(tokenString, &ptr, 10);
-                  if ((strlen(tokenString) > PRODUCT_PRICE_MAX) || (int)*ptr != 0){
-                     printf("\n3.Invalid file format.\n");
+                  if ((strlen(tokenString) > PRODUCT_PRICE_MAX) || strcmp(ptr,"")!=0){
+                     printf("\nInvalid file format.\n");
                      return FAILURE;
                   }
                   break;
@@ -197,26 +196,22 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
                      *ptr = '\0';
                   }
                   quantity = (unsigned) strtol(tokenString, &ptr, 10);
-                  if ((strlen(tokenString) > PRODUCT_QTY_MAX) || (int)*ptr != 0){
-                     printf("\n4.Invalid file format.\n");
+                  if ((strlen(tokenString) > PRODUCT_QTY_MAX) || strcmp(ptr,"")!=0){
+                     printf("\nInvalid file format.\n");
                      return FAILURE;
                   }
                   break;
                }
-               default:{
-                  printf("\n5.Invalid file format.\n");
+               default:
+               {
+                  printf("\nInvalid file format.\n");
                   return FAILURE;
                }
             }
-            i++;
+            
             tokenString = strtok('\0',",");
+            i++;
          }
-         
-         
-         /*name = strtok(tempString,",");
-         brand = strtok('\0',",");
-         price = (unsigned) atof(strtok('\0',","));
-         quantity = (unsigned) atof(strtok('\0',"\0"));*/
          
          node = getProduct(name, vm);
          
@@ -229,17 +224,49 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
             node->price = price;
             node->qty = quantity;
             
-            vm->headProduct = insertNode(vm->headProduct, node);
+            insertNode(vm, node);
             vm->totalProducts++;
          }
-      }
-      
+      }      
       fclose(stock);
          
+      i=0;
       vm->totalCoins = 0;
       while(fgets(tempString, sizeof(tempString), coins) != NULL){
-         coinValue = (unsigned) atof(strtok(tempString,","));
-         coinQuantity = (unsigned) atof(strtok('\0',"\0"));
+         j=0;
+         tokenString = strtok(tempString,",");
+         while(tokenString != NULL){
+            switch(j){
+               case 0:
+               {
+                  coinValue = (unsigned) strtol(tokenString, &ptr, 10);
+                  if ((coinValue != 200 && coinValue != 100 && coinValue != 50 && coinValue != 20 && coinValue != 10 && coinValue != 5) || strcmp(ptr,"")!=0){
+                     printf("\nInvalid file format.\n");
+                     return FAILURE;
+                  }
+                  break;
+               }
+               case 1:
+               {
+                  if( (ptr = strchr(tokenString, '\n')) != NULL){
+                     *ptr = '\0';
+                  }
+                  coinQuantity = (unsigned) strtol(tokenString, &ptr, 10);
+                  if (strcmp(ptr,"")!=0 || coinQuantity > MAX_COIN_VALUE){
+                     printf("\nInvalid file format.\n");
+                     return FAILURE;
+                  }
+                  break;
+               }
+               default:
+               {
+                  printf("\nInvalid file format.\n");
+                  return FAILURE;
+               }
+            }
+            tokenString = strtok('\0',",");
+            j++;
+         }
          
          coin.value = coinValue;
          coin.qty = coinQuantity;
@@ -247,7 +274,11 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
          i++;
          vm->totalCoins++;
       }
-
+      
+      if(vm->totalCoins != DISTINCT_COINS){
+         printf("\nInvalid file format.\n");
+         return FAILURE;
+      }      
       fclose(coins);
       
       return SUCCESS;
@@ -322,7 +353,6 @@ void getProductName(char *input)
       else
       {
          myString[length] = '\0';
-         /*input = myString;*/
          strcpy(input, myString);
          finished = TRUE;
       }

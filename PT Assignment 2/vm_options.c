@@ -139,7 +139,7 @@ void addProduct(VendingMachineType *vm)
                   strcpy(product->brand, productBrand);
                   product->price = productPrice;
                   product->qty = productQuantity;
-                  vm->headProduct = insertNode(vm->headProduct, product);
+                  insertNode(vm, product);
                   vm->totalProducts++;
                }
                printf("\n%s has been added successfully for $%.2f\n", productName, ((double)productPrice)/100);

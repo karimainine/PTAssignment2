@@ -38,6 +38,7 @@
 		590FD1C9142DF73900C3CA46 /* vm_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_utility.h; sourceTree = "<group>"; };
 		590FD1CA142DF73900C3CA46 /* vm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
 		590FD1CB142DF73900C3CA46 /* vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm.h; sourceTree = "<group>"; };
+		591E7DFA1440819F009247F6 /* vm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = vm; sourceTree = "<group>"; };
 		5958EF1A143F4DA2005B0E48 /* coins.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coins.csv; sourceTree = "<group>"; };
 		5958EF1B143F4DA2005B0E48 /* stock.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stock.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +75,7 @@
 			children = (
 				5958EF1A143F4DA2005B0E48 /* coins.csv */,
 				5958EF1B143F4DA2005B0E48 /* stock.csv */,
+				591E7DFA1440819F009247F6 /* vm */,
 				590FD1C3142DF73900C3CA46 /* makefile */,
 				590FD1C5142DF73900C3CA46 /* vm_options.c */,
 				590FD1C6142DF73900C3CA46 /* vm_options.h */,

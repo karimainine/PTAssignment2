@@ -17,7 +17,7 @@ void readRestOfLine(void);
 int systemInit(VendingMachineType*);
 int loadData(VendingMachineType*, char*, char*);
 void systemFree(VendingMachineType*);
-ProductNodeType *insertNode(ProductNodeType*, ProductNodeType*);
+void insertNode(VendingMachineType*, ProductNodeType*);
 void displayMainMenu(void);
 int getUserInt(char *, int, int, int);
 void getProductName(char*);
