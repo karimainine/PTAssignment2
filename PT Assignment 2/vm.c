@@ -1,14 +1,13 @@
-/******************************************************************************
-* COSC1283/1284 - Programming Techniques
-* Semester 2 2011 Assignment #2 - Vending Machine
-* Full Name        : EDIT HERE
-* Student Number   : EDIT HERE
-* Yallara Username : EDIT HERE
-* Course Code      : EDIT HERE
-* Program Code     : EDIT HERE
-* Start up code provided by Christopher Hoobin and Xiaodong Li
-******************************************************************************/
-
+/*****************************************************************************
+ * COSC1283/1284 - Programming Techniques
+ * Semester 2 2011 Assignment #2
+ * Full Name        : Karim Mohamed Gamal Abulainine
+ * Student Number   : 3314713
+ * Yallara Username : s3314713@yallara.cs.rmit.edu.au
+ * Course Code      : COSC1283
+ * Program Code     : MC060
+ * Start up code provided by Christopher Hoobin and Xiaodong Li
+ ******************************************************************************/
 #include "vm.h"
 #include "vm_options.h"
 #include "vm_utility.h"
@@ -56,8 +55,9 @@ int main(int argc, char *argv[])
             {
                saveData(&vm, argv[1], argv[2]);
                printf("\nData Saved. Good Bye!\n");
-               return EXIT_SUCCESS;
-               break;
+               /* Deallocate all dynamically allocated memory. */
+               systemFree(&vm);
+               exit(EXIT_SUCCESS);            
             }
             case 4:
             {
@@ -87,7 +87,9 @@ int main(int argc, char *argv[])
             case 9:
             {
                printf("\nGood Bye!\n");
-               return EXIT_SUCCESS;
+               /* Deallocate all dynamically allocated memory. */
+               systemFree(&vm);
+               exit(EXIT_SUCCESS);
             }
             default:
             {
@@ -96,11 +98,4 @@ int main(int argc, char *argv[])
          }   
       } while (TRUE);
    }
-
-   /* Interactive menu providing user with access to the 9 menu options */
-
-   /* Deallocate all dynamically allocated memory. */
-   systemFree(&vm);
-
-   exit(EXIT_SUCCESS);
 }

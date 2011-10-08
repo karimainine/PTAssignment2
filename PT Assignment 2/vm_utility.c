@@ -1,11 +1,11 @@
 /*****************************************************************************
  * COSC1283/1284 - Programming Techniques
- * Semester 2 2011 Assignment #2 - Vending Machine
- * Full Name        : EDIT HERE
- * Student Number   : EDIT HERE
- * Yallara Username : EDIT HERE
- * Course Code      : EDIT HERE
- * Program Code     : EDIT HERE
+ * Semester 2 2011 Assignment #2
+ * Full Name        : Karim Mohamed Gamal Abulainine
+ * Student Number   : 3314713
+ * Yallara Username : s3314713@yallara.cs.rmit.edu.au
+ * Course Code      : COSC1283
+ * Program Code     : MC060
  * Start up code provided by Christopher Hoobin and Xiaodong Li
  ******************************************************************************/
 
@@ -99,13 +99,10 @@ int systemInit(VendingMachineType *vm)
    return SUCCESS;
 }
 
-/*================= insertNode ================== 
- This function inserts a single node into a linked list.
- head is pointer to the list; may be null.
- prev points to new node's logical predecessor.
- name contains person's name to be inserted.
- The function returns the head pointer.
- */
+/****************************************************************************
+ * This function inserts a single node into a linked list.
+ * and orders the list while the inserting the nodes
+ ****************************************************************************/
 void insertNode(VendingMachineType * vm, ProductNodeType * node)
 {  
    ProductNodeType *current, *previous;
@@ -125,10 +122,10 @@ void insertNode(VendingMachineType * vm, ProductNodeType * node)
    } else {
       previous->nextProduct = node;
    }
-} /* insertNode */
+}
 
 /****************************************************************************
- * Loads all data into the system.
+ * Loads all data into the system and validates the files formats
  ****************************************************************************/
 int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
 {
@@ -273,9 +270,8 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
          vm->coins[i] = coin;
          i++;
          vm->totalCoins++;
-      }
-      
-      if(vm->totalCoins != DISTINCT_COINS){
+      }      
+      if((vm->totalCoins) > DISTINCT_COINS || (vm->totalCoins) < DISTINCT_COINS){
          printf("\nInvalid file format.\n");
          return FAILURE;
       }      
@@ -359,6 +355,9 @@ void getProductName(char *input)
    } while (!finished);
 }
 
+/****************************************************************************
+ * This function validates that the entered string is a valid brand name
+ ****************************************************************************/
 void getBrandName(char *input)
 {
    char myString[PRODUCT_BRAND_MAX + EXTRA_SPACES];
@@ -394,6 +393,10 @@ void getBrandName(char *input)
    } while (!finished);
 }
 
+/****************************************************************************
+ * This function returns a product by the entered name
+ ****************************************************************************/
+
 ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
    ProductNodeType *current;
    current = vm->headProduct;
@@ -406,6 +409,10 @@ ProductNodeType* getProduct(char* productName, VendingMachineType *vm){
    return NULL;
 }
 
+/****************************************************************************
+ * This function prints the payment process for the user while purchasing 
+ * a product
+ ****************************************************************************/
 double makePayment(double price, VendingMachineType *vm, int *paymentComplete){
    double remainingValue;
    double change = 0;
@@ -430,6 +437,11 @@ double makePayment(double price, VendingMachineType *vm, int *paymentComplete){
    *paymentComplete = SUCCESS;
    return change;
 }
+
+/****************************************************************************
+ * This function checks if the entered value is a valid coin value and then 
+ * returns it to the application
+ ****************************************************************************/
 
 int getCoins(VendingMachineType *vm){
    char myString[PRODUCT_PRICE_MAX + EXTRA_SPACES]; 
@@ -467,6 +479,10 @@ int getCoins(VendingMachineType *vm){
    return value;
 }
 
+/****************************************************************************
+ * This function prints the change returned to the user
+ ****************************************************************************/
+
 void printChangeCoins(double change, VendingMachineType* vm){
    int i;
    printf("Your change coins are: ");
@@ -480,6 +496,11 @@ void printChangeCoins(double change, VendingMachineType* vm){
    }
    printf("\n");
 }
+
+/****************************************************************************
+ * This function deletes the node with the entered name from the products 
+ * list
+ ****************************************************************************/
 
 void deleteNode(VendingMachineType* vm, char* productName){
    ProductNodeType *previous = NULL;
@@ -512,4 +533,11 @@ void deleteNode(VendingMachineType* vm, char* productName){
  ****************************************************************************/
 void systemFree(VendingMachineType *vm)
 {
+   /* free products */
+   ProductNodeType *current;
+   current = vm->headProduct;
+   while(current != NULL){
+      free(current);
+      current = current->nextProduct;
+   }
 }
