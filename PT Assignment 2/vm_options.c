@@ -12,6 +12,8 @@
 #include "vm.h"
 #include "vm_utility.h"
 #include "vm_options.h"
+#include <stdlib.h>
+#include <string.h>
 
 /****************************************************************************
 * Menu option #1: Purchase Product
@@ -47,7 +49,6 @@ void purchaseProduct(VendingMachineType *vm)
          printf("\nProduct not found. Please try again.\n");
       }
    }
-   
 }
 
 /****************************************************************************
@@ -56,6 +57,7 @@ void purchaseProduct(VendingMachineType *vm)
 ****************************************************************************/
 void displayProducts(VendingMachineType *vm)
 {
+   char tempString[MAX_MONETARY_STRINGS] = {'\0'};
    ProductNodeType *current;
    current = vm->headProduct;
    printf("\nProduct                                  Brand                Price Qty");
@@ -63,7 +65,8 @@ void displayProducts(VendingMachineType *vm)
    
    while (current != NULL)
    {
-      printf("%-40.40s %-20.20s %5d %3d\n", current->name, current->brand, current->price, current->qty);
+      sprintf(tempString, "$%.2f", ((double)(current->price))/100);
+      printf("%-40.40s %-20.20s %5.5s %3d\n", current->name, current->brand, tempString, current->qty);
       current = current->nextProduct;
    }
    printf("\n");
@@ -79,8 +82,6 @@ void saveData(VendingMachineType *vm, char *stockFile, char *coinsFile)
    FILE *stock;
    FILE *coins;
    int i;
-   unsigned* price;
-   int* quantity;
    ProductNodeType *current = vm->headProduct;
    
    if((stock=fopen(stockFile, "w")) == NULL) {
@@ -119,22 +120,25 @@ void addProduct(VendingMachineType *vm)
    printf("-----------\n");
    getProductName(productName); 
    if(*productName != '\n'){
-      getBrandName(productBrand);
-      if(*productBrand != '\n'){
-         productPrice = getUserInt("Enter the product's price in cents: ", PRODUCT_PRICE_MAX, MIN_PRODUCT_PRICE, MAX_PRODUCT_PRICE);
-         if(productPrice != -1){
-            productQuantity = getUserInt("Enter the products quantity: ", PRODUCT_QTY_MAX, MIN_PRODUCT_QUANTITY, MAX_PRODUCT_QUANTITY);
-            if(productQuantity != -1){
-               product = getProduct(productName, vm);
-               if(product != NULL && product->price == productPrice){
-                  product->qty += productQuantity;
-               } else {
+      product = getProduct(productName, vm);
+      if(product != NULL){
+         productQuantity = getUserInt("Product already exists, enter the product's quantity to be added to the current stock: ", PRODUCT_QTY_MAX, MIN_PRODUCT_QUANTITY, MAX_PRODUCT_QUANTITY);
+         if(productQuantity != -1){   
+            product->qty += productQuantity;
+            printf("\n%d items added to %s's current quantity successfully.\n", productQuantity, productName);
+         }
+      } else {
+         getBrandName(productBrand);
+         if(*productBrand != '\n'){
+            productPrice = getUserInt("Enter the product's price in cents: ", PRODUCT_PRICE_MAX, MIN_PRODUCT_PRICE, MAX_PRODUCT_PRICE);
+            if(productPrice != -1){
+               productQuantity = getUserInt("Enter the products quantity: ", PRODUCT_QTY_MAX, MIN_PRODUCT_QUANTITY, MAX_PRODUCT_QUANTITY);
+               if(productQuantity != -1){               
                   product = malloc(sizeof(ProductNodeType));
                   strcpy(product->name, productName);
                   strcpy(product->brand, productBrand);
                   product->price = productPrice;
                   product->qty = productQuantity;
-                  
                   vm->headProduct = insertNode(vm->headProduct, product);
                   vm->totalProducts++;
                }
@@ -167,18 +171,19 @@ void displayCoins(VendingMachineType *vm)
    int i;
    double coinValue;
    double total = 0;
+   char tempString[MAX_MONETARY_STRINGS] = {'\0'};
    printf("\nCoin  Quantity Value\n");
    printf("----- -------- --------\n");
    for(i=0; i<vm->totalCoins; i++){
-
       CoinType coin = vm->coins[i];
       coinValue = (((double)coin.value)/100)*coin.qty;
-      
-      printf("%5.2f %8d %8.2f\n", ((double)coin.value)/100, coin.qty, coinValue);
+      sprintf(tempString, "$%.2f", coinValue);
+      printf("$%4.2f %8d %8.8s\n", ((double)coin.value)/100, coin.qty, tempString);
       total += coinValue;
    }
    printf("%24s","--------\n");
-   printf("Total Value: %10.2f", total);
+   sprintf(tempString, "$%.2f", total);
+   printf("Total Value: %10.10s\n", tempString);
 }
 
 /****************************************************************************

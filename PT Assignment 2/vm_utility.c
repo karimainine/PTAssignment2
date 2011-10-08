@@ -137,12 +137,12 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
    FILE *stock;
    FILE *coins;
    char tempString[PRODUCT_NAME_MAX + PRODUCT_BRAND_MAX + PRODUCT_PRICE_MAX + PRODUCT_QTY_MAX + EXTRA_SPACES] = "";
-   
-   char *name;
-   char *brand;
-   unsigned quantity;
-   unsigned price;
-   
+   char *tokenString = NULL;
+   char name[PRODUCT_NAME_MAX + EXTRA_SPACES] = {'\0'};
+   char brand[PRODUCT_BRAND_MAX + EXTRA_SPACES] = {'\0'};
+   unsigned quantity = 0;
+   unsigned price = 0;
+   char *ptr;
    unsigned coinValue, coinQuantity;
    
    ProductNodeType *node = NULL;
@@ -158,14 +158,69 @@ int loadData(VendingMachineType *vm, char *stockfile, char *coinsFile)
    } else {      
       /*copying data from files to lists*/
       while(fgets(tempString, sizeof(tempString), stock) != NULL){
-         name = strtok(tempString,",");
+         i=0;
+         tokenString = strtok(tempString,",");
+         while(tokenString != NULL){
+            switch(i){
+               case 0:
+               {
+                  if(strlen(tokenString) > PRODUCT_NAME_MAX){
+                     printf("\n1.Invalid file format.\n");
+                     return FAILURE;
+                  }else{
+                     strcpy(name, tokenString);
+                  }
+                  break;
+               }
+               case 1:
+               {
+                  if(strlen(tokenString) > PRODUCT_BRAND_MAX){
+                     printf("\n2.Invalid file format.\n");
+                     return FAILURE;
+                  }else{
+                     strcpy(brand, tokenString);
+                  }
+                  break;
+               }
+               case 2:
+               {
+                  price = (unsigned) strtol(tokenString, &ptr, 10);
+                  if ((strlen(tokenString) > PRODUCT_PRICE_MAX) || (int)*ptr != 0){
+                     printf("\n3.Invalid file format.\n");
+                     return FAILURE;
+                  }
+                  break;
+               }
+               case 3:
+               {
+                  if( (ptr = strchr(tokenString, '\n')) != NULL){
+                     *ptr = '\0';
+                  }
+                  quantity = (unsigned) strtol(tokenString, &ptr, 10);
+                  if ((strlen(tokenString) > PRODUCT_QTY_MAX) || (int)*ptr != 0){
+                     printf("\n4.Invalid file format.\n");
+                     return FAILURE;
+                  }
+                  break;
+               }
+               default:{
+                  printf("\n5.Invalid file format.\n");
+                  return FAILURE;
+               }
+            }
+            i++;
+            tokenString = strtok('\0',",");
+         }
+         
+         
+         /*name = strtok(tempString,",");
          brand = strtok('\0',",");
          price = (unsigned) atof(strtok('\0',","));
-         quantity = (unsigned) atof(strtok('\0',"\0"));
+         quantity = (unsigned) atof(strtok('\0',"\0"));*/
          
          node = getProduct(name, vm);
          
-         if(node != NULL && node->price == price){
+         if(node != NULL){
             node->qty += quantity;
          } else {
             node = malloc(sizeof(ProductNodeType));
@@ -398,7 +453,7 @@ void printChangeCoins(double change, VendingMachineType* vm){
 
 void deleteNode(VendingMachineType* vm, char* productName){
    ProductNodeType *previous = NULL;
-   ProductNodeType *current = vm->headProduct;
+   ProductNodeType *current;
    int found = FAILURE;
    for (current = vm->headProduct; current != NULL; current = current->nextProduct){
       if(strcmp(current->name, productName) == 0){

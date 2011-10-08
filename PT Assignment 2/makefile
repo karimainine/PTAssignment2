@@ -8,7 +8,7 @@
 # Program Code     : MC060
 # Start up code provided by Christopher Hoobin and Xiaodong Li
 ##############################################################################
-CFLAGS = -ansi -Wall -pedantic -lm
+CFLAGS = -ansi -Wall -pedantic
 CC = gcc
 
 vm: vm.o vm_utility.o vm_options.o
@@ -22,4 +22,4 @@ vm_utility.o: vm_utility.c vm_utility.h
 clean:
 	rm -rf *.o core vm *.errs
 archive:
-	zip $(USER)-a1.zip *.c *.txt *.csv *.h makefile
+	zip ../s3314713-a2.zip *.c *.txt *.csv *.h makefile

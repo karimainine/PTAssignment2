@@ -34,6 +34,7 @@
 #define MIN_PRODUCT_PRICE 5
 #define MAX_PRODUCT_QUANTITY 999
 #define MIN_PRODUCT_QUANTITY 0
+#define MAX_MONETARY_STRINGS 20
 
 /* Max and Min values for a user input from the menu selection*/
 #define MAX_OPTION_RANGE 9
